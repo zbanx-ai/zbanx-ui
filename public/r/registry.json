@@ -1,80 +1,2249 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "acme",
-  "homepage": "https://acme.com",
+  "name": "zbanx-ui",
+  "homepage": "https://zbanx-ai.github.io/zbanx-ui",
   "items": [
     {
-      "name": "hello-world",
-      "type": "registry:component",
-      "title": "Hello World",
-      "description": "A simple hello world component",
-      "registryDependencies": ["button"],
+      "name": "accordion",
+      "title": "Accordion",
+      "description": "Accordion component.",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
       "files": [
         {
-          "path": "registry/new-york/blocks/hello-world/hello-world.tsx",
-          "type": "registry:component"
+          "path": "registry/zbanx/ui/accordion.tsx",
+          "type": "registry:ui",
+          "target": "@ui/accordion.tsx"
         }
-      ]
+      ],
+      "type": "registry:ui"
     },
     {
-      "name": "example-form",
-      "type": "registry:component",
-      "title": "Example Form",
-      "description": "A contact form with Zod validation.",
-      "dependencies": ["zod"],
-      "registryDependencies": ["button", "input", "label", "textarea", "card"],
+      "name": "alert",
+      "title": "Alert",
+      "description": "Alert component.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
       "files": [
         {
-          "path": "registry/new-york/blocks/example-form/example-form.tsx",
-          "type": "registry:component"
+          "path": "registry/zbanx/ui/alert.tsx",
+          "type": "registry:ui",
+          "target": "@ui/alert.tsx"
         }
-      ]
+      ],
+      "type": "registry:ui"
     },
     {
-      "name": "complex-component",
-      "type": "registry:component",
-      "title": "Complex Component",
-      "description": "A complex component showing hooks, libs and components.",
-      "registryDependencies": ["card"],
+      "name": "attachment",
+      "title": "Attachment",
+      "description": "Attachment component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
       "files": [
         {
-          "path": "registry/new-york/blocks/complex-component/page.tsx",
-          "type": "registry:page",
-          "target": "app/pokemon/page.tsx"
-        },
-        {
-          "path": "registry/new-york/blocks/complex-component/components/pokemon-card.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "registry/new-york/blocks/complex-component/components/pokemon-image.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "registry/new-york/blocks/complex-component/lib/pokemon.ts",
-          "type": "registry:lib"
-        },
-        {
-          "path": "registry/new-york/blocks/complex-component/hooks/use-pokemon.ts",
-          "type": "registry:hook"
+          "path": "registry/zbanx/ui/attachment.tsx",
+          "type": "registry:ui",
+          "target": "@ui/attachment.tsx"
         }
-      ]
+      ],
+      "type": "registry:ui"
     },
     {
-      "name": "example-with-css",
-      "type": "registry:component",
-      "title": "Example with CSS",
-      "description": "A login form with a CSS file.",
+      "name": "avatar",
+      "title": "Avatar",
+      "description": "Avatar component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
       "files": [
         {
-          "path": "registry/new-york/blocks/example-with-css/example-card.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "registry/new-york/blocks/example-with-css/example-card.css",
-          "type": "registry:component"
+          "path": "registry/zbanx/ui/avatar.tsx",
+          "type": "registry:ui",
+          "target": "@ui/avatar.tsx"
         }
-      ]
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "badge",
+      "title": "Badge",
+      "description": "Badge component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/badge.tsx",
+          "type": "registry:ui",
+          "target": "@ui/badge.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "breadcrumb",
+      "title": "Breadcrumb",
+      "description": "Breadcrumb component.",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/breadcrumb.tsx",
+          "type": "registry:ui",
+          "target": "@ui/breadcrumb.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "button-group",
+      "title": "Button Group",
+      "description": "Button Group component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "separator",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/button-group.tsx",
+          "type": "registry:ui",
+          "target": "@ui/button-group.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "button",
+      "title": "Button",
+      "description": "Button component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/button.tsx",
+          "type": "registry:ui",
+          "target": "@ui/button.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "calendar",
+      "title": "Calendar",
+      "description": "Calendar component.",
+      "dependencies": [
+        "lucide-react",
+        "react-day-picker"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/calendar.tsx",
+          "type": "registry:ui",
+          "target": "@ui/calendar.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "card",
+      "title": "Card",
+      "description": "Card component.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/card.tsx",
+          "type": "registry:ui",
+          "target": "@ui/card.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "carousel",
+      "title": "Carousel",
+      "description": "Carousel component.",
+      "dependencies": [
+        "embla-carousel-react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/carousel.tsx",
+          "type": "registry:ui",
+          "target": "@ui/carousel.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "chart",
+      "title": "Chart",
+      "description": "Chart component.",
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/chart.tsx",
+          "type": "registry:ui",
+          "target": "@ui/chart.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "checkbox",
+      "title": "Checkbox",
+      "description": "Checkbox component.",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/checkbox.tsx",
+          "type": "registry:ui",
+          "target": "@ui/checkbox.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "collapsible",
+      "title": "Collapsible",
+      "description": "Collapsible component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/collapsible.tsx",
+          "type": "registry:ui",
+          "target": "@ui/collapsible.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "command",
+      "title": "Command",
+      "description": "Command component.",
+      "dependencies": [
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "dialog",
+        "input-group",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/command.tsx",
+          "type": "registry:ui",
+          "target": "@ui/command.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "dialog",
+      "title": "Dialog",
+      "description": "Dialog component.",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/dialog.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dialog.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "dropdown-menu",
+      "title": "Dropdown Menu",
+      "description": "Dropdown Menu component.",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/dropdown-menu.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dropdown-menu.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "empty",
+      "title": "Empty",
+      "description": "Empty component.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/empty.tsx",
+          "type": "registry:ui",
+          "target": "@ui/empty.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "field",
+      "title": "Field",
+      "description": "Field component.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "label",
+        "separator",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/field.tsx",
+          "type": "registry:ui",
+          "target": "@ui/field.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "hover-card",
+      "title": "Hover Card",
+      "description": "Hover Card component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/hover-card.tsx",
+          "type": "registry:ui",
+          "target": "@ui/hover-card.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "input-group",
+      "title": "Input Group",
+      "description": "Input Group component.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "textarea",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/input-group.tsx",
+          "type": "registry:ui",
+          "target": "@ui/input-group.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "input-otp",
+      "title": "Input Otp",
+      "description": "Input Otp component.",
+      "dependencies": [
+        "input-otp",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/input-otp.tsx",
+          "type": "registry:ui",
+          "target": "@ui/input-otp.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "input",
+      "title": "Input",
+      "description": "Input component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/input.tsx",
+          "type": "registry:ui",
+          "target": "@ui/input.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "item",
+      "title": "Item",
+      "description": "Item component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "separator",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/item.tsx",
+          "type": "registry:ui",
+          "target": "@ui/item.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "label",
+      "title": "Label",
+      "description": "Label component.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/label.tsx",
+          "type": "registry:ui",
+          "target": "@ui/label.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "marker",
+      "title": "Marker",
+      "description": "Marker component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/marker.tsx",
+          "type": "registry:ui",
+          "target": "@ui/marker.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "message-scroller",
+      "title": "Message Scroller",
+      "description": "Message Scroller component.",
+      "dependencies": [
+        "@shadcn/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/message-scroller.tsx",
+          "type": "registry:ui",
+          "target": "@ui/message-scroller.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "message",
+      "title": "Message",
+      "description": "Message component.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/message.tsx",
+          "type": "registry:ui",
+          "target": "@ui/message.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "popover",
+      "title": "Popover",
+      "description": "Popover component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/popover.tsx",
+          "type": "registry:ui",
+          "target": "@ui/popover.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "progress",
+      "title": "Progress",
+      "description": "Progress component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/progress.tsx",
+          "type": "registry:ui",
+          "target": "@ui/progress.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "questionnaire",
+      "title": "Questionnaire",
+      "description": "Questionnaire component.",
+      "dependencies": [
+        "@shadcn/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/questionnaire.tsx",
+          "type": "registry:ui",
+          "target": "@ui/questionnaire.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "radio-group",
+      "title": "Radio Group",
+      "description": "Radio Group component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/radio-group.tsx",
+          "type": "registry:ui",
+          "target": "@ui/radio-group.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "resizable",
+      "title": "Resizable",
+      "description": "Resizable component.",
+      "dependencies": [
+        "react-resizable-panels"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/resizable.tsx",
+          "type": "registry:ui",
+          "target": "@ui/resizable.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "scroll-area",
+      "title": "Scroll Area",
+      "description": "Scroll Area component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "target": "@ui/scroll-area.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "select",
+      "title": "Select",
+      "description": "Select component.",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/select.tsx",
+          "type": "registry:ui",
+          "target": "@ui/select.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "separator",
+      "title": "Separator",
+      "description": "Separator component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/separator.tsx",
+          "type": "registry:ui",
+          "target": "@ui/separator.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "sheet",
+      "title": "Sheet",
+      "description": "Sheet component.",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/sheet.tsx",
+          "type": "registry:ui",
+          "target": "@ui/sheet.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "sidebar",
+      "title": "Sidebar",
+      "description": "Sidebar component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "separator",
+        "sheet",
+        "skeleton",
+        "tooltip",
+        "use-mobile",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/sidebar.tsx",
+          "type": "registry:ui",
+          "target": "@ui/sidebar.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "skeleton",
+      "title": "Skeleton",
+      "description": "Skeleton component.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/skeleton.tsx",
+          "type": "registry:ui",
+          "target": "@ui/skeleton.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "slider",
+      "title": "Slider",
+      "description": "Slider component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/slider.tsx",
+          "type": "registry:ui",
+          "target": "@ui/slider.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "sonner",
+      "title": "Sonner",
+      "description": "Sonner component.",
+      "dependencies": [
+        "lucide-react",
+        "next-themes",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/sonner.tsx",
+          "type": "registry:ui",
+          "target": "@ui/sonner.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "spinner",
+      "title": "Spinner",
+      "description": "Spinner component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/spinner.tsx",
+          "type": "registry:ui",
+          "target": "@ui/spinner.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "switch",
+      "title": "Switch",
+      "description": "Switch component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/switch.tsx",
+          "type": "registry:ui",
+          "target": "@ui/switch.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "table",
+      "title": "Table",
+      "description": "Table component.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/table.tsx",
+          "type": "registry:ui",
+          "target": "@ui/table.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "tabs",
+      "title": "Tabs",
+      "description": "Tabs component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/tabs.tsx",
+          "type": "registry:ui",
+          "target": "@ui/tabs.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "textarea",
+      "title": "Textarea",
+      "description": "Textarea component.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/textarea.tsx",
+          "type": "registry:ui",
+          "target": "@ui/textarea.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "toggle-group",
+      "title": "Toggle Group",
+      "description": "Toggle Group component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "toggle",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/toggle-group.tsx",
+          "type": "registry:ui",
+          "target": "@ui/toggle-group.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "toggle",
+      "title": "Toggle",
+      "description": "Toggle component.",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/toggle.tsx",
+          "type": "registry:ui",
+          "target": "@ui/toggle.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "tooltip",
+      "title": "Tooltip",
+      "description": "Tooltip component.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ui/tooltip.tsx",
+          "type": "registry:ui",
+          "target": "@ui/tooltip.tsx"
+        }
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "name": "country-flag",
+      "title": "Country Flag",
+      "description": "Country Flag component.",
+      "dependencies": [
+        "country-flag-icons"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/custom/country-flag/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/country-flag/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "data-select",
+      "title": "Data Select",
+      "description": "Data Select component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "popover",
+        "scroll-area",
+        "tooltip",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/custom/data-select/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/data-select/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "grouped-check-panel",
+      "title": "Grouped Check Panel",
+      "description": "Grouped Check Panel component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "checkbox",
+        "collapsible",
+        "input",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/custom/grouped-check-panel/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/grouped-check-panel/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "number-preset-select",
+      "title": "Number Preset Select",
+      "description": "Number Preset Select component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "popover",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/custom/number-preset-select/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/number-preset-select/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "number-range-select",
+      "title": "Number Range Select",
+      "description": "Number Range Select component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "popover",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/custom/number-range-select/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/number-range-select/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "platform-icon",
+      "title": "Platform Icon",
+      "description": "Platform Icon component.",
+      "dependencies": [
+        "lucide-react",
+        "react-icons"
+      ],
+      "registryDependencies": [
+        "tooltip",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/custom/platform-icon/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/platform-icon/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "popover-confirm",
+      "title": "Popover Confirm",
+      "description": "Popover Confirm component.",
+      "registryDependencies": [
+        "button",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/custom/popover-confirm/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/popover-confirm/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "video-cover",
+      "title": "Video Cover",
+      "description": "Video Cover component.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/custom/video-cover/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/video-cover/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-agent",
+      "title": "Shadcn Ai Agent",
+      "description": "Shadcn Ai Agent component.",
+      "dependencies": [
+        "ai",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "accordion",
+        "badge",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/agent.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/agent.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-artifact",
+      "title": "Shadcn Ai Artifact",
+      "description": "Shadcn Ai Artifact component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "tooltip",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/artifact.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/artifact.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-attachments",
+      "title": "Shadcn Ai Attachments",
+      "description": "Shadcn Ai Attachments component.",
+      "dependencies": [
+        "ai",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "hover-card",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/attachments.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/attachments.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-audio-player",
+      "title": "Shadcn Ai Audio Player",
+      "description": "Shadcn Ai Audio Player component.",
+      "dependencies": [
+        "ai",
+        "media-chrome"
+      ],
+      "registryDependencies": [
+        "button",
+        "button-group",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/audio-player.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/audio-player.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-canvas",
+      "title": "Shadcn Ai Canvas",
+      "description": "Shadcn Ai Canvas component.",
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/canvas.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/canvas.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-chain-of-thought",
+      "title": "Shadcn Ai Chain Of Thought",
+      "description": "Shadcn Ai Chain Of Thought component.",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/chain-of-thought.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/chain-of-thought.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-checkpoint",
+      "title": "Shadcn Ai Checkpoint",
+      "description": "Shadcn Ai Checkpoint component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "separator",
+        "tooltip",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/checkpoint.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/checkpoint.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-code-block",
+      "title": "Shadcn Ai Code Block",
+      "description": "Shadcn Ai Code Block component.",
+      "dependencies": [
+        "lucide-react",
+        "shiki"
+      ],
+      "registryDependencies": [
+        "button",
+        "select",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/code-block.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/code-block.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-commit",
+      "title": "Shadcn Ai Commit",
+      "description": "Shadcn Ai Commit component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/commit.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/commit.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-confirmation",
+      "title": "Shadcn Ai Confirmation",
+      "description": "Shadcn Ai Confirmation component.",
+      "dependencies": [
+        "ai"
+      ],
+      "registryDependencies": [
+        "alert",
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/confirmation.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/confirmation.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-connection",
+      "title": "Shadcn Ai Connection",
+      "description": "Shadcn Ai Connection component.",
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/connection.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/connection.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-context",
+      "title": "Shadcn Ai Context",
+      "description": "Shadcn Ai Context component.",
+      "dependencies": [
+        "ai",
+        "tokenlens"
+      ],
+      "registryDependencies": [
+        "button",
+        "hover-card",
+        "progress",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/context.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/context.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-controls",
+      "title": "Shadcn Ai Controls",
+      "description": "Shadcn Ai Controls component.",
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/controls.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/controls.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-conversation",
+      "title": "Shadcn Ai Conversation",
+      "description": "Shadcn Ai Conversation component.",
+      "dependencies": [
+        "ai",
+        "lucide-react",
+        "use-stick-to-bottom"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/conversation.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/conversation.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-edge",
+      "title": "Shadcn Ai Edge",
+      "description": "Shadcn Ai Edge component.",
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/edge.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/edge.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-environment-variables",
+      "title": "Shadcn Ai Environment Variables",
+      "description": "Shadcn Ai Environment Variables component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "switch",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/environment-variables.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/environment-variables.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-file-tree",
+      "title": "Shadcn Ai File Tree",
+      "description": "Shadcn Ai File Tree component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/file-tree.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/file-tree.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-image",
+      "title": "Shadcn Ai Image",
+      "description": "Shadcn Ai Image component.",
+      "dependencies": [
+        "ai"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/image.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/image.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-inline-citation",
+      "title": "Shadcn Ai Inline Citation",
+      "description": "Shadcn Ai Inline Citation component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "carousel",
+        "hover-card",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/inline-citation.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/inline-citation.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-jsx-preview",
+      "title": "Shadcn Ai Jsx Preview",
+      "description": "Shadcn Ai Jsx Preview component.",
+      "dependencies": [
+        "lucide-react",
+        "react-jsx-parser"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/jsx-preview.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/jsx-preview.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-message",
+      "title": "Shadcn Ai Message",
+      "description": "Shadcn Ai Message component.",
+      "dependencies": [
+        "@streamdown/cjk",
+        "@streamdown/code",
+        "@streamdown/math",
+        "@streamdown/mermaid",
+        "ai",
+        "lucide-react",
+        "streamdown"
+      ],
+      "registryDependencies": [
+        "button",
+        "button-group",
+        "tooltip",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/message.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/message.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-mic-selector",
+      "title": "Shadcn Ai Mic Selector",
+      "description": "Shadcn Ai Mic Selector component.",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "command",
+        "popover",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/mic-selector.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/mic-selector.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-model-selector",
+      "title": "Shadcn Ai Model Selector",
+      "description": "Shadcn Ai Model Selector component.",
+      "registryDependencies": [
+        "command",
+        "dialog",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/model-selector.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/model-selector.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-node",
+      "title": "Shadcn Ai Node",
+      "description": "Shadcn Ai Node component.",
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": [
+        "card",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/node.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/node.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-open-in-chat",
+      "title": "Shadcn Ai Open In Chat",
+      "description": "Shadcn Ai Open In Chat component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/open-in-chat.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/open-in-chat.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-package-info",
+      "title": "Shadcn Ai Package Info",
+      "description": "Shadcn Ai Package Info component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/package-info.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/package-info.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-panel",
+      "title": "Shadcn Ai Panel",
+      "description": "Shadcn Ai Panel component.",
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/panel.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/panel.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-persona",
+      "title": "Shadcn Ai Persona",
+      "description": "Shadcn Ai Persona component.",
+      "dependencies": [
+        "@rive-app/react-webgl2"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/persona.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/persona.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-plan",
+      "title": "Shadcn Ai Plan",
+      "description": "Shadcn Ai Plan component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "card",
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/plan.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/plan.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-prompt-input",
+      "title": "Shadcn Ai Prompt Input",
+      "description": "Shadcn Ai Prompt Input component.",
+      "dependencies": [
+        "ai",
+        "lucide-react",
+        "nanoid"
+      ],
+      "registryDependencies": [
+        "command",
+        "dropdown-menu",
+        "hover-card",
+        "input-group",
+        "select",
+        "spinner",
+        "tooltip",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/prompt-input.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/prompt-input.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-queue",
+      "title": "Shadcn Ai Queue",
+      "description": "Shadcn Ai Queue component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "collapsible",
+        "scroll-area",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/queue.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/queue.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-reasoning",
+      "title": "Shadcn Ai Reasoning",
+      "description": "Shadcn Ai Reasoning component.",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "@streamdown/cjk",
+        "@streamdown/code",
+        "@streamdown/math",
+        "@streamdown/mermaid",
+        "lucide-react",
+        "streamdown"
+      ],
+      "registryDependencies": [
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/reasoning.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/reasoning.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-sandbox",
+      "title": "Shadcn Ai Sandbox",
+      "description": "Shadcn Ai Sandbox component.",
+      "dependencies": [
+        "ai",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "collapsible",
+        "tabs",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/sandbox.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/sandbox.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-schema-display",
+      "title": "Shadcn Ai Schema Display",
+      "description": "Shadcn Ai Schema Display component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/schema-display.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/schema-display.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-shimmer",
+      "title": "Shadcn Ai Shimmer",
+      "description": "Shadcn Ai Shimmer component.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/shimmer.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/shimmer.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-snippet",
+      "title": "Shadcn Ai Snippet",
+      "description": "Shadcn Ai Snippet component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "input-group",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/snippet.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/snippet.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-sources",
+      "title": "Shadcn Ai Sources",
+      "description": "Shadcn Ai Sources component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/sources.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/sources.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-speech-input",
+      "title": "Shadcn Ai Speech Input",
+      "description": "Shadcn Ai Speech Input component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "spinner",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/speech-input.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/speech-input.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-stack-trace",
+      "title": "Shadcn Ai Stack Trace",
+      "description": "Shadcn Ai Stack Trace component.",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/stack-trace.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/stack-trace.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-suggestion",
+      "title": "Shadcn Ai Suggestion",
+      "description": "Shadcn Ai Suggestion component.",
+      "registryDependencies": [
+        "button",
+        "scroll-area",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/suggestion.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/suggestion.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-task",
+      "title": "Shadcn Ai Task",
+      "description": "Shadcn Ai Task component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/task.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/task.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-terminal",
+      "title": "Shadcn Ai Terminal",
+      "description": "Shadcn Ai Terminal component.",
+      "dependencies": [
+        "ansi-to-react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/terminal.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/terminal.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-test-results",
+      "title": "Shadcn Ai Test Results",
+      "description": "Shadcn Ai Test Results component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/test-results.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/test-results.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-tool",
+      "title": "Shadcn Ai Tool",
+      "description": "Shadcn Ai Tool component.",
+      "dependencies": [
+        "ai",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "collapsible",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/tool.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/tool.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-toolbar",
+      "title": "Shadcn Ai Toolbar",
+      "description": "Shadcn Ai Toolbar component.",
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/toolbar.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/toolbar.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-transcription",
+      "title": "Shadcn Ai Transcription",
+      "description": "Shadcn Ai Transcription component.",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "ai"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/transcription.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/transcription.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-voice-selector",
+      "title": "Shadcn Ai Voice Selector",
+      "description": "Shadcn Ai Voice Selector component.",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "command",
+        "dialog",
+        "spinner",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/voice-selector.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/voice-selector.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "shadcn-ai-web-preview",
+      "title": "Shadcn Ai Web Preview",
+      "description": "Shadcn Ai Web Preview component.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "collapsible",
+        "input",
+        "tooltip",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-elements/web-preview.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-elements/web-preview.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "ai-agent-loading-state",
+      "title": "Ai Agent Loading State",
+      "description": "Ai Agent Loading State component.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-agents/loading-state/index.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-agents/loading-state/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "ai-agent-prompt-bar",
+      "title": "Ai Agent Prompt Bar",
+      "description": "Ai Agent Prompt Bar component.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "input-group",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/zbanx/ai-agents/prompt-bar/index.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-agents/prompt-bar/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "entity-chip",
+      "title": "Entity Chip",
+      "description": "Entity Chip component.",
+      "files": [
+        {
+          "path": "registry/zbanx/atom/entity-chip/index.tsx",
+          "type": "registry:component",
+          "target": "@components/atom/entity-chip/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "value-pill",
+      "title": "Value Pill",
+      "description": "Value Pill component.",
+      "files": [
+        {
+          "path": "registry/zbanx/atom/value-pill/index.tsx",
+          "type": "registry:component",
+          "target": "@components/atom/value-pill/index.tsx"
+        }
+      ],
+      "type": "registry:component"
+    },
+    {
+      "name": "use-countdown",
+      "title": "Use Countdown",
+      "description": "Use Countdown component.",
+      "files": [
+        {
+          "path": "registry/zbanx/hooks/use-countdown.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-countdown.ts"
+        }
+      ],
+      "type": "registry:hook"
+    },
+    {
+      "name": "use-mobile",
+      "title": "Use Mobile",
+      "description": "Use Mobile component.",
+      "files": [
+        {
+          "path": "registry/zbanx/hooks/use-mobile.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-mobile.ts"
+        }
+      ],
+      "type": "registry:hook"
+    },
+    {
+      "name": "utils",
+      "title": "Utils",
+      "description": "Utils component.",
+      "files": [
+        {
+          "path": "registry/zbanx/lib/cn.ts",
+          "type": "registry:lib",
+          "target": "@lib/cn.ts"
+        }
+      ],
+      "type": "registry:lib"
+    },
+    {
+      "name": "color",
+      "title": "Color",
+      "description": "Color component.",
+      "files": [
+        {
+          "path": "registry/zbanx/lib/color.ts",
+          "type": "registry:lib",
+          "target": "@lib/color.ts"
+        }
+      ],
+      "type": "registry:lib"
     }
   ]
 }

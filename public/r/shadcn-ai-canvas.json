@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shadcn-ai-canvas",
+  "title": "Shadcn Ai Canvas",
+  "description": "Shadcn Ai Canvas component.",
+  "dependencies": [
+    "@xyflow/react"
+  ],
+  "files": [
+    {
+      "path": "registry/zbanx/ai-elements/canvas.tsx",
+      "content": "import type { ReactFlowProps } from \"@xyflow/react\";\nimport { Background, ReactFlow } from \"@xyflow/react\";\nimport type { ReactNode } from \"react\";\n\nimport \"@xyflow/react/dist/style.css\";\n\ntype CanvasProps = ReactFlowProps & {\n  children?: ReactNode;\n};\n\nconst deleteKeyCode = [\"Backspace\", \"Delete\"];\n\nexport const Canvas = ({ children, ...props }: CanvasProps) => (\n  <ReactFlow\n    deleteKeyCode={deleteKeyCode}\n    fitView\n    panOnDrag={false}\n    panOnScroll\n    selectionOnDrag={true}\n    zoomOnDoubleClick={false}\n    {...props}\n  >\n    <Background bgColor=\"var(--sidebar)\" />\n    {children}\n  </ReactFlow>\n);\n",
+      "type": "registry:component",
+      "target": "@components/ai-elements/canvas.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

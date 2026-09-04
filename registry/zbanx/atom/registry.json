@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "entity-chip",
+      "type": "registry:component",
+      "title": "Entity Chip",
+      "description": "Entity Chip component.",
+      "files": [
+        {
+          "path": "entity-chip/index.tsx",
+          "type": "registry:component",
+          "target": "@components/atom/entity-chip/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "value-pill",
+      "type": "registry:component",
+      "title": "Value Pill",
+      "description": "Value Pill component.",
+      "files": [
+        {
+          "path": "value-pill/index.tsx",
+          "type": "registry:component",
+          "target": "@components/atom/value-pill/index.tsx"
+        }
+      ]
+    }
+  ]
+}

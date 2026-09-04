@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utils",
+      "description": "Utils component.",
+      "files": [
+        {
+          "path": "cn.ts",
+          "type": "registry:lib",
+          "target": "@lib/cn.ts"
+        }
+      ]
+    },
+    {
+      "name": "color",
+      "type": "registry:lib",
+      "title": "Color",
+      "description": "Color component.",
+      "files": [
+        {
+          "path": "color.ts",
+          "type": "registry:lib",
+          "target": "@lib/color.ts"
+        }
+      ]
+    }
+  ]
+}

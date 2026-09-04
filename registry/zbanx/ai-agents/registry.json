@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "ai-agent-loading-state",
+      "type": "registry:component",
+      "title": "Ai Agent Loading State",
+      "description": "Ai Agent Loading State component.",
+      "files": [
+        {
+          "path": "loading-state/index.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-agents/loading-state/index.tsx"
+        }
+      ],
+      "registryDependencies": ["utils"]
+    },
+    {
+      "name": "ai-agent-prompt-bar",
+      "type": "registry:component",
+      "title": "Ai Agent Prompt Bar",
+      "description": "Ai Agent Prompt Bar component.",
+      "files": [
+        {
+          "path": "prompt-bar/index.tsx",
+          "type": "registry:component",
+          "target": "@components/ai-agents/prompt-bar/index.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react", "motion"],
+      "registryDependencies": ["badge", "button", "input-group", "utils"]
+    }
+  ]
+}

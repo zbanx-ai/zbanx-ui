@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover-confirm",
+  "title": "Popover Confirm",
+  "description": "Popover Confirm component.",
+  "registryDependencies": [
+    "button",
+    "popover"
+  ],
+  "files": [
+    {
+      "path": "registry/zbanx/custom/popover-confirm/index.tsx",
+      "content": "\"use client\";\n\nimport { type ReactElement, useState } from \"react\";\nimport { Button } from \"@/registry/zbanx/ui/button\";\nimport {\n  Popover,\n  PopoverContent,\n  PopoverDescription,\n  PopoverHeader,\n  PopoverTitle,\n  PopoverTrigger,\n} from \"@/registry/zbanx/ui/popover\";\n\nexport interface PopoverConfirmProps {\n  onConfirm: () => void;\n  title?: string;\n  description?: string;\n  confirmText?: string;\n  cancelText?: string;\n  children: ReactElement;\n}\n\nexport function PopoverConfirm({\n  onConfirm,\n  title = \"确认操作\",\n  description = \"该操作提交后不可撤回，是否继续？\",\n  confirmText = \"确认\",\n  cancelText = \"取消\",\n  children,\n}: PopoverConfirmProps) {\n  const [open, setOpen] = useState(false);\n\n  return (\n    <Popover open={open} onOpenChange={setOpen}>\n      <PopoverTrigger render={children} />\n      <PopoverContent align=\"end\" className=\"w-64\">\n        <PopoverHeader>\n          <PopoverTitle>{title}</PopoverTitle>\n          <PopoverDescription>{description}</PopoverDescription>\n        </PopoverHeader>\n        <div className=\"flex justify-end gap-2\">\n          <Button\n            type=\"button\"\n            variant=\"outline\"\n            size=\"sm\"\n            onClick={() => setOpen(false)}\n          >\n            {cancelText}\n          </Button>\n          <Button\n            type=\"button\"\n            size=\"sm\"\n            onClick={() => {\n              setOpen(false);\n              onConfirm();\n            }}\n          >\n            {confirmText}\n          </Button>\n        </div>\n      </PopoverContent>\n    </Popover>\n  );\n}\n\nexport default PopoverConfirm;\n",
+      "type": "registry:component",
+      "target": "@components/custom/popover-confirm/index.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

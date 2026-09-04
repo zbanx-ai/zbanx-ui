@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "country-flag",
+  "title": "Country Flag",
+  "description": "Country Flag component.",
+  "dependencies": [
+    "country-flag-icons"
+  ],
+  "files": [
+    {
+      "path": "registry/zbanx/custom/country-flag/index.tsx",
+      "content": "import { hasFlag } from \"country-flag-icons\";\nimport * as Flags from \"country-flag-icons/react/3x2\";\nimport type { ElementType } from \"react\";\n\ntype CountryFlagProps = {\n  value?: string;\n  valueFormatted?: string;\n  // 是否展示国家名称\n  showName?: boolean;\n  iconPosition?: \"start\" | \"end\";\n  iconProps?: React.ComponentProps<\"svg\"> & { className?: string };\n};\n\nexport default function CountryFlag({\n  value,\n  valueFormatted,\n  showName = true,\n  iconPosition = \"start\",\n  iconProps,\n}: CountryFlagProps) {\n  if (!value) {\n    return \"-\";\n  }\n  const country = value.toUpperCase();\n  const flagCountry = country === \"UK\" ? \"GB\" : country;\n  const name = valueFormatted || country;\n  if (!hasFlag(flagCountry)) {\n    return name;\n  }\n  const Flag = (Flags as Record<string, ElementType>)[flagCountry];\n  const icon = Flag ? (\n    <Flag className=\"h-4 w-6 shrink-0\" {...iconProps} />\n  ) : (\n    <span>{country}</span>\n  );\n\n  return (\n    <div className=\"flex items-center gap-1.5\">\n      {iconPosition === \"start\" && icon}\n      {showName && <div className=\"truncate\">{name}</div>}\n      {iconPosition === \"end\" && icon}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/custom/country-flag/index.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

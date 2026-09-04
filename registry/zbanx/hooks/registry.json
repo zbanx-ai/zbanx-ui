@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "use-countdown",
+      "type": "registry:hook",
+      "title": "Use Countdown",
+      "description": "Use Countdown component.",
+      "files": [
+        {
+          "path": "use-countdown.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-countdown.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "title": "Use Mobile",
+      "description": "Use Mobile component.",
+      "files": [
+        {
+          "path": "use-mobile.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-mobile.ts"
+        }
+      ]
+    }
+  ]
+}

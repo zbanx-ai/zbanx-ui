@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "video-cover",
+  "title": "Video Cover",
+  "description": "Video Cover component.",
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "registry/zbanx/custom/video-cover/index.tsx",
+      "content": "\"use client\";\n\nimport type { CSSProperties, ReactNode, SyntheticEvent } from \"react\";\nimport { useState } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface VideoCoverProps {\n  src?: string;\n  alt?: string;\n  className?: string;\n  imageClassName?: string;\n  children?: ReactNode;\n}\n\nexport function VideoCover({\n  src,\n  alt = \"\",\n  className,\n  imageClassName,\n  children,\n}: VideoCoverProps) {\n  const [isPortrait, setIsPortrait] = useState(false);\n  const [hasLoaded, setHasLoaded] = useState(false);\n\n  const handleLoad = (event: SyntheticEvent<HTMLImageElement>) => {\n    const image = event.currentTarget;\n    setIsPortrait(image.naturalHeight > image.naturalWidth);\n    setHasLoaded(true);\n  };\n\n  const backgroundStyle: CSSProperties | undefined = src\n    ? { backgroundImage: `url(${src})` }\n    : undefined;\n\n  return (\n    <div\n      className={cn(\"relative isolate overflow-hidden bg-muted\", className)}\n      data-loaded={hasLoaded}\n      data-orientation={isPortrait ? \"portrait\" : \"landscape\"}\n    >\n      {src && isPortrait && (\n        <div\n          aria-hidden=\"true\"\n          className=\"absolute inset-0 scale-110 bg-center bg-cover\"\n          style={backgroundStyle}\n        >\n          <div className=\"absolute inset-0 bg-black/55\" />\n        </div>\n      )}\n\n      {src ? (\n        <img\n          src={src}\n          alt={alt}\n          className={cn(\n            \"absolute inset-0 size-full\",\n            isPortrait ? \"object-contain\" : \"object-cover\",\n            imageClassName\n          )}\n          onLoad={handleLoad}\n        />\n      ) : (\n        <div className=\"absolute inset-0 flex items-center justify-center text-muted-foreground text-xs\">\n          暂无视频封面\n        </div>\n      )}\n\n      {children}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/custom/video-cover/index.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

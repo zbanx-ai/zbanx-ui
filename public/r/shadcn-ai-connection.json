@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shadcn-ai-connection",
+  "title": "Shadcn Ai Connection",
+  "description": "Shadcn Ai Connection component.",
+  "dependencies": [
+    "@xyflow/react"
+  ],
+  "files": [
+    {
+      "path": "registry/zbanx/ai-elements/connection.tsx",
+      "content": "import type { ConnectionLineComponent } from \"@xyflow/react\";\n\nconst HALF = 0.5;\n\nexport const Connection: ConnectionLineComponent = ({\n  fromX,\n  fromY,\n  toX,\n  toY,\n}) => (\n  <g>\n    <path\n      className=\"animated\"\n      d={`M${fromX},${fromY} C ${fromX + (toX - fromX) * HALF},${fromY} ${fromX + (toX - fromX) * HALF},${toY} ${toX},${toY}`}\n      fill=\"none\"\n      stroke=\"var(--color-ring)\"\n      strokeWidth={1}\n    />\n    <circle\n      cx={toX}\n      cy={toY}\n      fill=\"#fff\"\n      r={3}\n      stroke=\"var(--color-ring)\"\n      strokeWidth={1}\n    />\n  </g>\n);\n",
+      "type": "registry:component",
+      "target": "@components/ai-elements/connection.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

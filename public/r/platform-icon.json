@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "platform-icon",
+  "title": "Platform Icon",
+  "description": "Platform Icon component.",
+  "dependencies": [
+    "lucide-react",
+    "react-icons"
+  ],
+  "registryDependencies": [
+    "tooltip",
+    "utils"
+  ],
+  "files": [
+    {
+      "path": "registry/zbanx/custom/platform-icon/index.tsx",
+      "content": "\"use client\";\n\nimport { Globe, Handshake, UsersRound } from \"lucide-react\";\nimport {\n  FaBloggerB,\n  FaInstagram,\n  FaPinterest,\n  FaReddit,\n  FaTiktok,\n  FaYoutube,\n} from \"react-icons/fa6\";\nimport { cn } from \"@/lib/utils\";\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger,\n} from \"@/registry/zbanx/ui/tooltip\";\n\nexport type Platform =\n  | \"youtube\"\n  | \"tiktok\"\n  | \"instagram\"\n  | \"group\"\n  | \"other\"\n  | \"blog\"\n  | \"deal\"\n  | \"reddit\"\n  | \"pinterest\"\n  | string;\n\nconst PLATFORM_CONFIG: Record<\n  string,\n  {\n    icon: React.ComponentType<{ className?: string }>;\n    label: string;\n    color: string;\n  }\n> = {\n  youtube: { icon: FaYoutube, label: \"YouTube\", color: \"text-[#FF0000]\" },\n  instagram: { icon: FaInstagram, label: \"Instagram\", color: \"text-[#E4405F]\" },\n  tiktok: { icon: FaTiktok, label: \"TikTok\", color: \"text-foreground\" },\n  group: { icon: UsersRound, label: \"Group\", color: \"text-primary\" },\n  other: { icon: Globe, label: \"Other\", color: \"text-muted-foreground\" },\n  blog: { icon: FaBloggerB, label: \"Blog\", color: \"text-[#F57C00]\" },\n  deal: { icon: Handshake, label: \"Deal\", color: \"text-muted-foreground\" },\n  reddit: { icon: FaReddit, label: \"Reddit\", color: \"text-[#FF4500]\" },\n  pinterest: {\n    icon: FaPinterest,\n    label: \"Pinterest\",\n    color: \"text-[#E60023]\",\n  },\n};\n\nconst SIZE_MAP = {\n  xs: \"size-3\",\n  sm: \"size-4\",\n  md: \"size-5\",\n  lg: \"size-7\",\n  xl: \"size-9\",\n} as const;\n\ninterface PlatformIconProps {\n  platform: Platform;\n  size?: keyof typeof SIZE_MAP;\n  tooltip?: boolean;\n  href?: string;\n  className?: string;\n}\n\nexport function PlatformIcon({\n  platform,\n  size = \"md\",\n  tooltip = true,\n  href,\n  className,\n}: PlatformIconProps) {\n  const normalizedPlatform = platform.trim().toLowerCase();\n  const config = PLATFORM_CONFIG[normalizedPlatform] ?? {\n    icon: Globe,\n    label: platform || \"未知平台\",\n    color: \"text-muted-foreground\",\n  };\n  const Icon = config.icon;\n  const sizeClass = SIZE_MAP[size];\n\n  const icon = <Icon className={cn(sizeClass, config.color, className)} />;\n\n  if (!tooltip) {\n    return href ? (\n      <a\n        href={href}\n        target=\"_blank\"\n        rel=\"noreferrer\"\n        aria-label={config.label}\n        className=\"inline-flex cursor-pointer items-center rounded-sm hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary\"\n      >\n        {icon}\n      </a>\n    ) : (\n      icon\n    );\n  }\n\n  return (\n    <Tooltip>\n      <TooltipTrigger\n        render={\n          href ? (\n            <a\n              href={href}\n              target=\"_blank\"\n              rel=\"noreferrer\"\n              className=\"inline-flex cursor-pointer items-center rounded-sm hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary\"\n            />\n          ) : (\n            <span className=\"inline-flex cursor-default\" />\n          )\n        }\n      >\n        {icon}\n      </TooltipTrigger>\n      <TooltipContent>{config.label}</TooltipContent>\n    </Tooltip>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/custom/platform-icon/index.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "value-pill",
+  "title": "Value Pill",
+  "description": "Value Pill component.",
+  "files": [
+    {
+      "path": "registry/zbanx/atom/value-pill/index.tsx",
+      "content": "type Tone = \"neutral\" | \"green\" | \"orange\" | \"red\" | \"accent\";\n\nconst TONES: Record<Tone, { cls: string; ring: string }> = {\n  neutral: { cls: \"bg-field text-ink-2\", ring: \"var(--shadow-hairline)\" },\n  green: {\n    cls: \"bg-green-tint text-green\",\n    ring: \"0 0 0 1px color-mix(in oklch, var(--green) 28%, transparent)\",\n  },\n  orange: {\n    cls: \"bg-orange-tint text-orange\",\n    ring: \"0 0 0 1px color-mix(in oklch, var(--orange) 28%, transparent)\",\n  },\n  red: {\n    cls: \"bg-red-tint text-red\",\n    ring: \"0 0 0 1px color-mix(in oklch, var(--red) 28%, transparent)\",\n  },\n  accent: {\n    cls: \"bg-accent-tint text-accent-ink\",\n    ring: \"0 0 0 1px color-mix(in oklch, var(--accent) 28%, transparent)\",\n  },\n};\n\n/** Inline value badge — a plain value (a date, a name, a count) set off in\n *  prose. Softer than a StatusPill (no dot) and not a mono token (see Chip). */\nexport function ValuePill({\n  children,\n  tone = \"neutral\",\n  className = \"\",\n}: {\n  children: React.ReactNode;\n  tone?: Tone;\n  className?: string;\n}) {\n  const t = TONES[tone];\n  return (\n    <span\n      className={`mx-0.5 inline-flex items-center rounded-full px-1.5 py-0 align-middle font-medium text-[12px] ${t.cls} ${className}`}\n      style={{ boxShadow: t.ring }}\n    >\n      {children}\n    </span>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "@components/atom/value-pill/index.tsx"
+    }
+  ],
+  "type": "registry:component"
+}

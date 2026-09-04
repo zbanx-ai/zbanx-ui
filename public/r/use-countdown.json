@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-countdown",
+  "title": "Use Countdown",
+  "description": "Use Countdown component.",
+  "files": [
+    {
+      "path": "registry/zbanx/hooks/use-countdown.ts",
+      "content": "\"use client\";\n\nimport { useCallback, useEffect, useRef, useState } from \"react\";\n\nexport interface UseCountdownResult {\n  /** 剩余秒数 */\n  secondsLeft: number;\n  /** 是否正在倒计时 */\n  isRunning: boolean;\n  /** 倒计时是否已结束（secondsLeft === 0 且曾运行过） */\n  isFinished: boolean;\n  /** 从指定秒数开始倒计时 */\n  start: (seconds?: number) => void;\n  /** 重置为 0 并停止 */\n  reset: () => void;\n}\n\n/**\n * 验证码 / 二维码有效期倒计时 Hook。\n *\n * @param initialSeconds 初始倒计时秒数，默认 60。\n * @param onComplete 倒计时归零时回调（在定时器回调中触发，非渲染期）。\n */\nexport function useCountdown(\n  initialSeconds = 60,\n  onComplete?: () => void\n): UseCountdownResult {\n  const [secondsLeft, setSecondsLeft] = useState(0);\n  const [isFinished, setIsFinished] = useState(false);\n  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);\n  const onCompleteRef = useRef(onComplete);\n\n  useEffect(() => {\n    onCompleteRef.current = onComplete;\n  }, [onComplete]);\n\n  const clear = useCallback(() => {\n    if (timerRef.current) {\n      clearInterval(timerRef.current);\n      timerRef.current = null;\n    }\n  }, []);\n\n  const start = useCallback(\n    (seconds?: number) => {\n      const total = seconds ?? initialSeconds;\n      clear();\n      setSecondsLeft(total);\n      setIsFinished(false);\n      timerRef.current = setInterval(() => {\n        setSecondsLeft((prev) => {\n          if (prev <= 1) {\n            clear();\n            setIsFinished(true);\n            onCompleteRef.current?.();\n            return 0;\n          }\n          return prev - 1;\n        });\n      }, 1000);\n    },\n    [initialSeconds, clear]\n  );\n\n  const reset = useCallback(() => {\n    clear();\n    setSecondsLeft(0);\n    setIsFinished(false);\n  }, [clear]);\n\n  useEffect(() => clear, [clear]);\n\n  return {\n    secondsLeft,\n    isRunning: secondsLeft > 0,\n    isFinished,\n    start,\n    reset,\n  };\n}\n",
+      "type": "registry:hook",
+      "target": "@hooks/use-countdown.ts"
+    }
+  ],
+  "type": "registry:hook"
+}

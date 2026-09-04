@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "color",
+  "title": "Color",
+  "description": "Color component.",
+  "files": [
+    {
+      "path": "registry/zbanx/lib/color.ts",
+      "content": "let context: CanvasRenderingContext2D | null = null;\n\nconst SENTINEL = \"#010101\";\nconst SENTINEL_SERIALIZED = \"rgb(1, 1, 1)\";\n\n/**\n * 将 zrender 颜色插值解析器不支持的 CSS 颜色（oklch/lab/color() 等）\n * 转换为 rgba 字符串，保证 echarts hover 状态过渡可正常插值。\n */\nexport function resolveCssColor(color: string, fallback: string): string {\n  if (typeof document === \"undefined\") return fallback || color;\n  context ??= document\n    .createElement(\"canvas\")\n    .getContext(\"2d\", { willReadFrequently: true });\n  if (!context) return fallback;\n  const ctx = context;\n  ctx.clearRect(0, 0, 1, 1);\n  ctx.fillStyle = SENTINEL;\n  ctx.fillStyle = color || fallback;\n  if (ctx.fillStyle === SENTINEL_SERIALIZED && color !== SENTINEL) {\n    return fallback;\n  }\n  ctx.fillRect(0, 0, 1, 1);\n  const pixel = ctx.getImageData(0, 0, 1, 1).data;\n  const alpha = pixel[3] ?? 0;\n  if (alpha === 0) return fallback;\n  return `rgba(${pixel[0] ?? 0}, ${pixel[1] ?? 0}, ${pixel[2] ?? 0}, ${(\n    alpha / 255\n  ).toFixed(3)})`;\n}\n",
+      "type": "registry:lib",
+      "target": "@lib/color.ts"
+    }
+  ],
+  "type": "registry:lib"
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "country-flag",
+      "type": "registry:component",
+      "title": "Country Flag",
+      "description": "Country Flag component.",
+      "files": [
+        {
+          "path": "country-flag/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/country-flag/index.tsx"
+        }
+      ],
+      "dependencies": ["country-flag-icons"]
+    },
+    {
+      "name": "data-select",
+      "type": "registry:component",
+      "title": "Data Select",
+      "description": "Data Select component.",
+      "files": [
+        {
+          "path": "data-select/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/data-select/index.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["popover", "scroll-area", "tooltip", "utils"]
+    },
+    {
+      "name": "grouped-check-panel",
+      "type": "registry:component",
+      "title": "Grouped Check Panel",
+      "description": "Grouped Check Panel component.",
+      "files": [
+        {
+          "path": "grouped-check-panel/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/grouped-check-panel/index.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["checkbox", "collapsible", "input", "utils"]
+    },
+    {
+      "name": "number-preset-select",
+      "type": "registry:component",
+      "title": "Number Preset Select",
+      "description": "Number Preset Select component.",
+      "files": [
+        {
+          "path": "number-preset-select/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/number-preset-select/index.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button", "input", "popover", "utils"]
+    },
+    {
+      "name": "number-range-select",
+      "type": "registry:component",
+      "title": "Number Range Select",
+      "description": "Number Range Select component.",
+      "files": [
+        {
+          "path": "number-range-select/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/number-range-select/index.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button", "input", "popover", "utils"]
+    },
+    {
+      "name": "platform-icon",
+      "type": "registry:component",
+      "title": "Platform Icon",
+      "description": "Platform Icon component.",
+      "files": [
+        {
+          "path": "platform-icon/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/platform-icon/index.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react", "react-icons"],
+      "registryDependencies": ["tooltip", "utils"]
+    },
+    {
+      "name": "popover-confirm",
+      "type": "registry:component",
+      "title": "Popover Confirm",
+      "description": "Popover Confirm component.",
+      "files": [
+        {
+          "path": "popover-confirm/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/popover-confirm/index.tsx"
+        }
+      ],
+      "registryDependencies": ["button", "popover"]
+    },
+    {
+      "name": "video-cover",
+      "type": "registry:component",
+      "title": "Video Cover",
+      "description": "Video Cover component.",
+      "files": [
+        {
+          "path": "video-cover/index.tsx",
+          "type": "registry:component",
+          "target": "@components/custom/video-cover/index.tsx"
+        }
+      ],
+      "registryDependencies": ["utils"]
+    }
+  ]
+}
