@@ -8,8 +8,8 @@
     "class-variance-authority"
   ],
   "registryDependencies": [
-    "separator",
-    "utils"
+    "zbanx-ai/zbanx-ui/separator",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

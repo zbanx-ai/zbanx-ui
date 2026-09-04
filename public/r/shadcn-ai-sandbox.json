@@ -8,9 +8,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "collapsible",
-    "tabs",
-    "utils"
+    "zbanx-ai/zbanx-ui/collapsible",
+    "zbanx-ai/zbanx-ui/tabs",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Ai Agent Loading State",
   "description": "Ai Agent Loading State component.",
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

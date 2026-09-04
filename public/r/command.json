@@ -8,9 +8,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "dialog",
-    "input-group",
-    "utils"
+    "zbanx-ai/zbanx-ui/dialog",
+    "zbanx-ai/zbanx-ui/input-group",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

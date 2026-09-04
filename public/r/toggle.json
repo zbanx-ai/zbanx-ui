@@ -8,7 +8,7 @@
     "class-variance-authority"
   ],
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

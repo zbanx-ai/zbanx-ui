@@ -7,8 +7,8 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "badge",
-    "utils"
+    "zbanx-ai/zbanx-ui/badge",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

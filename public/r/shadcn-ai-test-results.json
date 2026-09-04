@@ -7,9 +7,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "badge",
-    "collapsible",
-    "utils"
+    "zbanx-ai/zbanx-ui/badge",
+    "zbanx-ai/zbanx-ui/collapsible",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

@@ -7,10 +7,10 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "badge",
-    "carousel",
-    "hover-card",
-    "utils"
+    "zbanx-ai/zbanx-ui/badge",
+    "zbanx-ai/zbanx-ui/carousel",
+    "zbanx-ai/zbanx-ui/hover-card",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

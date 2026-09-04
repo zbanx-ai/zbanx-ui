@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bundle-custom",
+  "title": "custom bundle",
+  "description": "Installs every item in the custom category (8 items).",
+  "registryDependencies": [
+    "zbanx-ai/zbanx-ui/country-flag",
+    "zbanx-ai/zbanx-ui/data-select",
+    "zbanx-ai/zbanx-ui/grouped-check-panel",
+    "zbanx-ai/zbanx-ui/number-preset-select",
+    "zbanx-ai/zbanx-ui/number-range-select",
+    "zbanx-ai/zbanx-ui/platform-icon",
+    "zbanx-ai/zbanx-ui/popover-confirm",
+    "zbanx-ai/zbanx-ui/video-cover"
+  ],
+  "type": "registry:item"
+}

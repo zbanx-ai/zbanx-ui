@@ -7,9 +7,9 @@
     "ai"
   ],
   "registryDependencies": [
-    "alert",
-    "button",
-    "utils"
+    "zbanx-ai/zbanx-ui/alert",
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

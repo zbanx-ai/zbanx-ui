@@ -13,7 +13,10 @@
           "target": "@components/custom/country-flag/index.tsx"
         }
       ],
-      "dependencies": ["country-flag-icons"]
+      "dependencies": [
+        "country-flag-icons"
+      ],
+      "registryDependencies": []
     },
     {
       "name": "data-select",
@@ -27,8 +30,15 @@
           "target": "@components/custom/data-select/index.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["popover", "scroll-area", "tooltip", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/popover",
+        "zbanx-ai/zbanx-ui/scroll-area",
+        "zbanx-ai/zbanx-ui/tooltip",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "grouped-check-panel",
@@ -42,8 +52,15 @@
           "target": "@components/custom/grouped-check-panel/index.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["checkbox", "collapsible", "input", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/checkbox",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/input",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "number-preset-select",
@@ -57,8 +74,15 @@
           "target": "@components/custom/number-preset-select/index.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "input", "popover", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/input",
+        "zbanx-ai/zbanx-ui/popover",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "number-range-select",
@@ -72,8 +96,15 @@
           "target": "@components/custom/number-range-select/index.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "input", "popover", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/input",
+        "zbanx-ai/zbanx-ui/popover",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "platform-icon",
@@ -87,8 +118,14 @@
           "target": "@components/custom/platform-icon/index.tsx"
         }
       ],
-      "dependencies": ["lucide-react", "react-icons"],
-      "registryDependencies": ["tooltip", "utils"]
+      "dependencies": [
+        "lucide-react",
+        "react-icons"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/tooltip",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "popover-confirm",
@@ -102,7 +139,10 @@
           "target": "@components/custom/popover-confirm/index.tsx"
         }
       ],
-      "registryDependencies": ["button", "popover"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/popover"
+      ]
     },
     {
       "name": "video-cover",
@@ -116,7 +156,9 @@
           "target": "@components/custom/video-cover/index.tsx"
         }
       ],
-      "registryDependencies": ["utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     }
   ]
 }

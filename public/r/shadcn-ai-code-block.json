@@ -8,9 +8,9 @@
     "shiki"
   ],
   "registryDependencies": [
-    "button",
-    "select",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/select",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

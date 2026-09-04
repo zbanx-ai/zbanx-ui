@@ -8,7 +8,7 @@
     "ai"
   ],
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

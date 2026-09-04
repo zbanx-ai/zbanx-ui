@@ -7,11 +7,11 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "button",
-    "collapsible",
-    "input",
-    "tooltip",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/collapsible",
+    "zbanx-ai/zbanx-ui/input",
+    "zbanx-ai/zbanx-ui/tooltip",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

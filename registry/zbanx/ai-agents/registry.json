@@ -13,7 +13,9 @@
           "target": "@components/ai-agents/loading-state/index.tsx"
         }
       ],
-      "registryDependencies": ["utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "ai-agent-prompt-bar",
@@ -27,8 +29,16 @@
           "target": "@components/ai-agents/prompt-bar/index.tsx"
         }
       ],
-      "dependencies": ["lucide-react", "motion"],
-      "registryDependencies": ["badge", "button", "input-group", "utils"]
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/input-group",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     }
   ]
 }

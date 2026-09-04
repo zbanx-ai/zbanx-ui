@@ -8,10 +8,10 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "button",
-    "command",
-    "popover",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/command",
+    "zbanx-ai/zbanx-ui/popover",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

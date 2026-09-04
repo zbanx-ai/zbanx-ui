@@ -7,7 +7,7 @@
     "@base-ui/react"
   ],
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

@@ -7,9 +7,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "button",
-    "dropdown-menu",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/dropdown-menu",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

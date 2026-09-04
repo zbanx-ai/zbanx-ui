@@ -8,9 +8,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "accordion",
-    "badge",
-    "utils"
+    "zbanx-ai/zbanx-ui/accordion",
+    "zbanx-ai/zbanx-ui/badge",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

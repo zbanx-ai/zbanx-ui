@@ -13,8 +13,8 @@
     "streamdown"
   ],
   "registryDependencies": [
-    "collapsible",
-    "utils"
+    "zbanx-ai/zbanx-ui/collapsible",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

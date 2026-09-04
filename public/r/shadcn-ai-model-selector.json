@@ -4,9 +4,9 @@
   "title": "Shadcn Ai Model Selector",
   "description": "Shadcn Ai Model Selector component.",
   "registryDependencies": [
-    "command",
-    "dialog",
-    "utils"
+    "zbanx-ai/zbanx-ui/command",
+    "zbanx-ai/zbanx-ui/dialog",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

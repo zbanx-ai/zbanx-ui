@@ -8,6 +8,7 @@
     "next-themes",
     "sonner"
   ],
+  "registryDependencies": [],
   "files": [
     {
       "path": "registry/zbanx/ui/sonner.tsx",

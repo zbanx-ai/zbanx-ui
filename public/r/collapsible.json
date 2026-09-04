@@ -6,6 +6,7 @@
   "dependencies": [
     "@base-ui/react"
   ],
+  "registryDependencies": [],
   "files": [
     {
       "path": "registry/zbanx/ui/collapsible.tsx",

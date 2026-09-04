@@ -1,0 +1,11 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bundle-ai-agents",
+  "title": "ai-agents bundle",
+  "description": "Installs every item in the ai-agents category (2 items).",
+  "registryDependencies": [
+    "zbanx-ai/zbanx-ui/ai-agent-loading-state",
+    "zbanx-ai/zbanx-ui/ai-agent-prompt-bar"
+  ],
+  "type": "registry:item"
+}

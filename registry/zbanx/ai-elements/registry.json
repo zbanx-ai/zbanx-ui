@@ -13,8 +13,15 @@
           "target": "@components/ai-elements/agent.tsx"
         }
       ],
-      "dependencies": ["ai", "lucide-react"],
-      "registryDependencies": ["accordion", "badge", "utils"]
+      "dependencies": [
+        "ai",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/accordion",
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-artifact",
@@ -28,8 +35,14 @@
           "target": "@components/ai-elements/artifact.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "tooltip", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/tooltip",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-attachments",
@@ -43,8 +56,15 @@
           "target": "@components/ai-elements/attachments.tsx"
         }
       ],
-      "dependencies": ["ai", "lucide-react"],
-      "registryDependencies": ["button", "hover-card", "utils"]
+      "dependencies": [
+        "ai",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/hover-card",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-audio-player",
@@ -58,8 +78,15 @@
           "target": "@components/ai-elements/audio-player.tsx"
         }
       ],
-      "dependencies": ["ai", "media-chrome"],
-      "registryDependencies": ["button", "button-group", "utils"]
+      "dependencies": [
+        "ai",
+        "media-chrome"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/button-group",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-canvas",
@@ -73,7 +100,10 @@
           "target": "@components/ai-elements/canvas.tsx"
         }
       ],
-      "dependencies": ["@xyflow/react"]
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": []
     },
     {
       "name": "shadcn-ai-chain-of-thought",
@@ -91,7 +121,11 @@
         "@radix-ui/react-use-controllable-state",
         "lucide-react"
       ],
-      "registryDependencies": ["badge", "collapsible", "utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-checkpoint",
@@ -105,8 +139,15 @@
           "target": "@components/ai-elements/checkpoint.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "separator", "tooltip", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/separator",
+        "zbanx-ai/zbanx-ui/tooltip",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-code-block",
@@ -120,8 +161,15 @@
           "target": "@components/ai-elements/code-block.tsx"
         }
       ],
-      "dependencies": ["lucide-react", "shiki"],
-      "registryDependencies": ["button", "select", "utils"]
+      "dependencies": [
+        "lucide-react",
+        "shiki"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/select",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-commit",
@@ -135,8 +183,15 @@
           "target": "@components/ai-elements/commit.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["avatar", "button", "collapsible", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/avatar",
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-confirmation",
@@ -150,8 +205,14 @@
           "target": "@components/ai-elements/confirmation.tsx"
         }
       ],
-      "dependencies": ["ai"],
-      "registryDependencies": ["alert", "button", "utils"]
+      "dependencies": [
+        "ai"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/alert",
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-connection",
@@ -165,7 +226,10 @@
           "target": "@components/ai-elements/connection.tsx"
         }
       ],
-      "dependencies": ["@xyflow/react"]
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": []
     },
     {
       "name": "shadcn-ai-context",
@@ -179,8 +243,16 @@
           "target": "@components/ai-elements/context.tsx"
         }
       ],
-      "dependencies": ["ai", "tokenlens"],
-      "registryDependencies": ["button", "hover-card", "progress", "utils"]
+      "dependencies": [
+        "ai",
+        "tokenlens"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/hover-card",
+        "zbanx-ai/zbanx-ui/progress",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-controls",
@@ -194,8 +266,12 @@
           "target": "@components/ai-elements/controls.tsx"
         }
       ],
-      "dependencies": ["@xyflow/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-conversation",
@@ -209,8 +285,15 @@
           "target": "@components/ai-elements/conversation.tsx"
         }
       ],
-      "dependencies": ["ai", "lucide-react", "use-stick-to-bottom"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "ai",
+        "lucide-react",
+        "use-stick-to-bottom"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-edge",
@@ -224,7 +307,10 @@
           "target": "@components/ai-elements/edge.tsx"
         }
       ],
-      "dependencies": ["@xyflow/react"]
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": []
     },
     {
       "name": "shadcn-ai-environment-variables",
@@ -238,8 +324,15 @@
           "target": "@components/ai-elements/environment-variables.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["badge", "button", "switch", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/switch",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-file-tree",
@@ -253,8 +346,13 @@
           "target": "@components/ai-elements/file-tree.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["collapsible", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-image",
@@ -268,8 +366,12 @@
           "target": "@components/ai-elements/image.tsx"
         }
       ],
-      "dependencies": ["ai"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "ai"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-inline-citation",
@@ -283,8 +385,15 @@
           "target": "@components/ai-elements/inline-citation.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["badge", "carousel", "hover-card", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/carousel",
+        "zbanx-ai/zbanx-ui/hover-card",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-jsx-preview",
@@ -298,8 +407,13 @@
           "target": "@components/ai-elements/jsx-preview.tsx"
         }
       ],
-      "dependencies": ["lucide-react", "react-jsx-parser"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "lucide-react",
+        "react-jsx-parser"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-message",
@@ -322,7 +436,12 @@
         "lucide-react",
         "streamdown"
       ],
-      "registryDependencies": ["button", "button-group", "tooltip", "utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/button-group",
+        "zbanx-ai/zbanx-ui/tooltip",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-mic-selector",
@@ -340,7 +459,12 @@
         "@radix-ui/react-use-controllable-state",
         "lucide-react"
       ],
-      "registryDependencies": ["button", "command", "popover", "utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/command",
+        "zbanx-ai/zbanx-ui/popover",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-model-selector",
@@ -354,7 +478,11 @@
           "target": "@components/ai-elements/model-selector.tsx"
         }
       ],
-      "registryDependencies": ["command", "dialog", "utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/command",
+        "zbanx-ai/zbanx-ui/dialog",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-node",
@@ -368,8 +496,13 @@
           "target": "@components/ai-elements/node.tsx"
         }
       ],
-      "dependencies": ["@xyflow/react"],
-      "registryDependencies": ["card", "utils"]
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/card",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-open-in-chat",
@@ -383,8 +516,14 @@
           "target": "@components/ai-elements/open-in-chat.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "dropdown-menu", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/dropdown-menu",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-package-info",
@@ -398,8 +537,13 @@
           "target": "@components/ai-elements/package-info.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["badge", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-panel",
@@ -413,8 +557,12 @@
           "target": "@components/ai-elements/panel.tsx"
         }
       ],
-      "dependencies": ["@xyflow/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-persona",
@@ -428,8 +576,12 @@
           "target": "@components/ai-elements/persona.tsx"
         }
       ],
-      "dependencies": ["@rive-app/react-webgl2"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@rive-app/react-webgl2"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-plan",
@@ -443,8 +595,15 @@
           "target": "@components/ai-elements/plan.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "card", "collapsible", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/card",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-prompt-input",
@@ -458,16 +617,20 @@
           "target": "@components/ai-elements/prompt-input.tsx"
         }
       ],
-      "dependencies": ["ai", "lucide-react", "nanoid"],
+      "dependencies": [
+        "ai",
+        "lucide-react",
+        "nanoid"
+      ],
       "registryDependencies": [
-        "command",
-        "dropdown-menu",
-        "hover-card",
-        "input-group",
-        "select",
-        "spinner",
-        "tooltip",
-        "utils"
+        "zbanx-ai/zbanx-ui/command",
+        "zbanx-ai/zbanx-ui/dropdown-menu",
+        "zbanx-ai/zbanx-ui/hover-card",
+        "zbanx-ai/zbanx-ui/input-group",
+        "zbanx-ai/zbanx-ui/select",
+        "zbanx-ai/zbanx-ui/spinner",
+        "zbanx-ai/zbanx-ui/tooltip",
+        "zbanx-ai/zbanx-ui/utils"
       ]
     },
     {
@@ -482,8 +645,15 @@
           "target": "@components/ai-elements/queue.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "collapsible", "scroll-area", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/scroll-area",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-reasoning",
@@ -506,7 +676,10 @@
         "lucide-react",
         "streamdown"
       ],
-      "registryDependencies": ["collapsible", "utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-sandbox",
@@ -520,8 +693,15 @@
           "target": "@components/ai-elements/sandbox.tsx"
         }
       ],
-      "dependencies": ["ai", "lucide-react"],
-      "registryDependencies": ["collapsible", "tabs", "utils"]
+      "dependencies": [
+        "ai",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/tabs",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-schema-display",
@@ -535,8 +715,14 @@
           "target": "@components/ai-elements/schema-display.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["badge", "collapsible", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-shimmer",
@@ -550,8 +736,12 @@
           "target": "@components/ai-elements/shimmer.tsx"
         }
       ],
-      "dependencies": ["motion"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-snippet",
@@ -565,8 +755,13 @@
           "target": "@components/ai-elements/snippet.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["input-group", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/input-group",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-sources",
@@ -580,8 +775,13 @@
           "target": "@components/ai-elements/sources.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["collapsible", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-speech-input",
@@ -595,8 +795,14 @@
           "target": "@components/ai-elements/speech-input.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["button", "spinner", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/spinner",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-stack-trace",
@@ -614,7 +820,11 @@
         "@radix-ui/react-use-controllable-state",
         "lucide-react"
       ],
-      "registryDependencies": ["button", "collapsible", "utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-suggestion",
@@ -628,7 +838,11 @@
           "target": "@components/ai-elements/suggestion.tsx"
         }
       ],
-      "registryDependencies": ["button", "scroll-area", "utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/scroll-area",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-task",
@@ -642,8 +856,13 @@
           "target": "@components/ai-elements/task.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["collapsible", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-terminal",
@@ -657,8 +876,14 @@
           "target": "@components/ai-elements/terminal.tsx"
         }
       ],
-      "dependencies": ["ansi-to-react", "lucide-react"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "ansi-to-react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-test-results",
@@ -672,8 +897,14 @@
           "target": "@components/ai-elements/test-results.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["badge", "collapsible", "utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-tool",
@@ -687,8 +918,15 @@
           "target": "@components/ai-elements/tool.tsx"
         }
       ],
-      "dependencies": ["ai", "lucide-react"],
-      "registryDependencies": ["badge", "collapsible", "utils"]
+      "dependencies": [
+        "ai",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/badge",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-toolbar",
@@ -702,8 +940,12 @@
           "target": "@components/ai-elements/toolbar.tsx"
         }
       ],
-      "dependencies": ["@xyflow/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@xyflow/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-transcription",
@@ -717,8 +959,13 @@
           "target": "@components/ai-elements/transcription.tsx"
         }
       ],
-      "dependencies": ["@radix-ui/react-use-controllable-state", "ai"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "ai"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "shadcn-ai-voice-selector",
@@ -737,11 +984,11 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "button",
-        "command",
-        "dialog",
-        "spinner",
-        "utils"
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/command",
+        "zbanx-ai/zbanx-ui/dialog",
+        "zbanx-ai/zbanx-ui/spinner",
+        "zbanx-ai/zbanx-ui/utils"
       ]
     },
     {
@@ -756,13 +1003,15 @@
           "target": "@components/ai-elements/web-preview.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
+      "dependencies": [
+        "lucide-react"
+      ],
       "registryDependencies": [
-        "button",
-        "collapsible",
-        "input",
-        "tooltip",
-        "utils"
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/collapsible",
+        "zbanx-ai/zbanx-ui/input",
+        "zbanx-ai/zbanx-ui/tooltip",
+        "zbanx-ai/zbanx-ui/utils"
       ]
     }
   ]

@@ -9,14 +9,14 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "button",
-    "input",
-    "separator",
-    "sheet",
-    "skeleton",
-    "tooltip",
-    "use-mobile",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/input",
+    "zbanx-ai/zbanx-ui/separator",
+    "zbanx-ai/zbanx-ui/sheet",
+    "zbanx-ai/zbanx-ui/skeleton",
+    "zbanx-ai/zbanx-ui/tooltip",
+    "zbanx-ai/zbanx-ui/use-mobile",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

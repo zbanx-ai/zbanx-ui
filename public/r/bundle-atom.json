@@ -1,0 +1,11 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bundle-atom",
+  "title": "atom bundle",
+  "description": "Installs every item in the atom category (2 items).",
+  "registryDependencies": [
+    "zbanx-ai/zbanx-ui/entity-chip",
+    "zbanx-ai/zbanx-ui/value-pill"
+  ],
+  "type": "registry:item"
+}

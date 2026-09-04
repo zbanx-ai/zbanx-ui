@@ -38,7 +38,7 @@ export default async function PreviewPage({
       <section className="flex flex-col gap-2">
         <h2 className="font-semibold text-lg">Install</h2>
         <code className="rounded-md border bg-muted/50 px-3 py-2 text-sm">
-          bunx --bun shadcn@latest add github.com/zbanx-ai/zbanx-ui/{item.name}
+          bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/{item.name}
         </code>
         <code className="rounded-md border bg-muted/50 px-3 py-2 text-sm">
           bunx --bun shadcn@latest add @zbanx/{item.name}

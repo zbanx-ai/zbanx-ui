@@ -1,0 +1,11 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bundle-hooks",
+  "title": "hooks bundle",
+  "description": "Installs every item in the hooks category (2 items).",
+  "registryDependencies": [
+    "zbanx-ai/zbanx-ui/use-countdown",
+    "zbanx-ai/zbanx-ui/use-mobile"
+  ],
+  "type": "registry:item"
+}

@@ -17,7 +17,7 @@ export default async function Home() {
         <div className="flex flex-wrap gap-2">
           <code className="rounded-md border bg-muted/50 px-3 py-1.5 text-sm">
             bunx --bun shadcn@latest add
-            github.com/zbanx-ai/zbanx-ui/&lt;name&gt;
+            zbanx-ai/zbanx-ui/&lt;name&gt;
           </code>
           <a
             className="rounded-md border px-3 py-1.5 text-sm hover:bg-muted"

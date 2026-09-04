@@ -7,7 +7,7 @@
     "@xyflow/react"
   ],
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

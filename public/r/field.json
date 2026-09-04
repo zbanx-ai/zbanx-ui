@@ -7,9 +7,9 @@
     "class-variance-authority"
   ],
   "registryDependencies": [
-    "label",
-    "separator",
-    "utils"
+    "zbanx-ai/zbanx-ui/label",
+    "zbanx-ai/zbanx-ui/separator",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

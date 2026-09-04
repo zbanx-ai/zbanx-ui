@@ -8,9 +8,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "button",
-    "hover-card",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/hover-card",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

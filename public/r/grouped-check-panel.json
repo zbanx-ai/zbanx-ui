@@ -7,10 +7,10 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "checkbox",
-    "collapsible",
-    "input",
-    "utils"
+    "zbanx-ai/zbanx-ui/checkbox",
+    "zbanx-ai/zbanx-ui/collapsible",
+    "zbanx-ai/zbanx-ui/input",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

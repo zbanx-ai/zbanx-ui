@@ -8,11 +8,11 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "button",
-    "command",
-    "dialog",
-    "spinner",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/command",
+    "zbanx-ai/zbanx-ui/dialog",
+    "zbanx-ai/zbanx-ui/spinner",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

@@ -7,7 +7,7 @@
     "react-resizable-panels"
   ],
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

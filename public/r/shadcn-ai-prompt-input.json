@@ -9,14 +9,14 @@
     "nanoid"
   ],
   "registryDependencies": [
-    "command",
-    "dropdown-menu",
-    "hover-card",
-    "input-group",
-    "select",
-    "spinner",
-    "tooltip",
-    "utils"
+    "zbanx-ai/zbanx-ui/command",
+    "zbanx-ai/zbanx-ui/dropdown-menu",
+    "zbanx-ai/zbanx-ui/hover-card",
+    "zbanx-ai/zbanx-ui/input-group",
+    "zbanx-ai/zbanx-ui/select",
+    "zbanx-ai/zbanx-ui/spinner",
+    "zbanx-ai/zbanx-ui/tooltip",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

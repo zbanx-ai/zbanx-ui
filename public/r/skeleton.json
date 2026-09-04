@@ -4,7 +4,7 @@
   "title": "Skeleton",
   "description": "Skeleton component.",
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

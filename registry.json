@@ -9,6 +9,7 @@
     "registry/zbanx/ai-agents/registry.json",
     "registry/zbanx/atom/registry.json",
     "registry/zbanx/hooks/registry.json",
-    "registry/zbanx/lib/registry.json"
+    "registry/zbanx/lib/registry.json",
+    "registry/zbanx/bundles/registry.json"
   ]
 }

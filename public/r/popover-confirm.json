@@ -4,8 +4,8 @@
   "title": "Popover Confirm",
   "description": "Popover Confirm component.",
   "registryDependencies": [
-    "button",
-    "popover"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/popover"
   ],
   "files": [
     {

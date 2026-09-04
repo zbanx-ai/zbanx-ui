@@ -16,7 +16,7 @@
 
 ```bash
 # 方式一：GitHub 直装（无需任何配置）
-bunx --bun shadcn@latest add github.com/zbanx-ai/zbanx-ui/<name>
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/<name>
 
 # 方式二：命名空间（每个项目只需配置一次）
 bunx --bun shadcn@latest registry add @zbanx=https://zbanx-ai.github.io/zbanx-ui/r/{name}.json
@@ -26,9 +26,9 @@ bunx --bun shadcn@latest add @zbanx/<name>
 示例：
 
 ```bash
-bunx --bun shadcn@latest add github.com/zbanx-ai/zbanx-ui/popover-confirm
-bunx --bun shadcn@latest add github.com/zbanx-ai/zbanx-ui/button
-bunx --bun shadcn@latest add github.com/zbanx-ai/zbanx-ui/use-mobile
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/popover-confirm
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/button
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/use-mobile
 ```
 
 安装时 CLI 会自动处理 `dependencies`（npm 包）、`registryDependencies`

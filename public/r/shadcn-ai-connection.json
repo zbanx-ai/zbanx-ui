@@ -6,6 +6,7 @@
   "dependencies": [
     "@xyflow/react"
   ],
+  "registryDependencies": [],
   "files": [
     {
       "path": "registry/zbanx/ai-elements/connection.tsx",

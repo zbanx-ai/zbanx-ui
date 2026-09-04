@@ -4,7 +4,7 @@
   "title": "Label",
   "description": "Label component.",
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

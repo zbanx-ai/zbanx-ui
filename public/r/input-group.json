@@ -7,10 +7,10 @@
     "class-variance-authority"
   ],
   "registryDependencies": [
-    "button",
-    "input",
-    "textarea",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/input",
+    "zbanx-ai/zbanx-ui/textarea",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

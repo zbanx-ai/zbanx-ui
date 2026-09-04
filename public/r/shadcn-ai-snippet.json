@@ -7,8 +7,8 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "input-group",
-    "utils"
+    "zbanx-ai/zbanx-ui/input-group",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

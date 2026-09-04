@@ -13,8 +13,13 @@
           "target": "@ui/accordion.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "lucide-react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "alert",
@@ -28,8 +33,12 @@
           "target": "@ui/alert.tsx"
         }
       ],
-      "dependencies": ["class-variance-authority"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "attachment",
@@ -43,8 +52,14 @@
           "target": "@ui/attachment.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "avatar",
@@ -58,8 +73,12 @@
           "target": "@ui/avatar.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "badge",
@@ -73,8 +92,13 @@
           "target": "@ui/badge.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "breadcrumb",
@@ -88,8 +112,13 @@
           "target": "@ui/breadcrumb.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "lucide-react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "button-group",
@@ -103,8 +132,14 @@
           "target": "@ui/button-group.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["separator", "utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/separator",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "button",
@@ -118,8 +153,13 @@
           "target": "@ui/button.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "calendar",
@@ -133,8 +173,14 @@
           "target": "@ui/calendar.tsx"
         }
       ],
-      "dependencies": ["lucide-react", "react-day-picker"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "lucide-react",
+        "react-day-picker"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "card",
@@ -148,7 +194,9 @@
           "target": "@ui/card.tsx"
         }
       ],
-      "registryDependencies": ["utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "carousel",
@@ -162,8 +210,14 @@
           "target": "@ui/carousel.tsx"
         }
       ],
-      "dependencies": ["embla-carousel-react", "lucide-react"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "embla-carousel-react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "chart",
@@ -177,8 +231,12 @@
           "target": "@ui/chart.tsx"
         }
       ],
-      "dependencies": ["recharts"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "checkbox",
@@ -192,8 +250,13 @@
           "target": "@ui/checkbox.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "lucide-react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "collapsible",
@@ -207,7 +270,10 @@
           "target": "@ui/collapsible.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": []
     },
     {
       "name": "command",
@@ -221,8 +287,15 @@
           "target": "@ui/command.tsx"
         }
       ],
-      "dependencies": ["cmdk", "lucide-react"],
-      "registryDependencies": ["dialog", "input-group", "utils"]
+      "dependencies": [
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/dialog",
+        "zbanx-ai/zbanx-ui/input-group",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "dialog",
@@ -236,8 +309,14 @@
           "target": "@ui/dialog.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "lucide-react"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "dropdown-menu",
@@ -251,8 +330,13 @@
           "target": "@ui/dropdown-menu.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "lucide-react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "empty",
@@ -266,8 +350,12 @@
           "target": "@ui/empty.tsx"
         }
       ],
-      "dependencies": ["class-variance-authority"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "field",
@@ -281,8 +369,14 @@
           "target": "@ui/field.tsx"
         }
       ],
-      "dependencies": ["class-variance-authority"],
-      "registryDependencies": ["label", "separator", "utils"]
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/label",
+        "zbanx-ai/zbanx-ui/separator",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "hover-card",
@@ -296,8 +390,12 @@
           "target": "@ui/hover-card.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "input-group",
@@ -311,8 +409,15 @@
           "target": "@ui/input-group.tsx"
         }
       ],
-      "dependencies": ["class-variance-authority"],
-      "registryDependencies": ["button", "input", "textarea", "utils"]
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/input",
+        "zbanx-ai/zbanx-ui/textarea",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "input-otp",
@@ -326,8 +431,13 @@
           "target": "@ui/input-otp.tsx"
         }
       ],
-      "dependencies": ["input-otp", "lucide-react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "input-otp",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "input",
@@ -341,8 +451,12 @@
           "target": "@ui/input.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "item",
@@ -356,8 +470,14 @@
           "target": "@ui/item.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["separator", "utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/separator",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "label",
@@ -371,7 +491,9 @@
           "target": "@ui/label.tsx"
         }
       ],
-      "registryDependencies": ["utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "marker",
@@ -385,8 +507,13 @@
           "target": "@ui/marker.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "message-scroller",
@@ -400,8 +527,14 @@
           "target": "@ui/message-scroller.tsx"
         }
       ],
-      "dependencies": ["@shadcn/react", "lucide-react"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "@shadcn/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "message",
@@ -415,7 +548,9 @@
           "target": "@ui/message.tsx"
         }
       ],
-      "registryDependencies": ["utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "popover",
@@ -429,8 +564,12 @@
           "target": "@ui/popover.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "progress",
@@ -444,8 +583,12 @@
           "target": "@ui/progress.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "questionnaire",
@@ -459,8 +602,14 @@
           "target": "@ui/questionnaire.tsx"
         }
       ],
-      "dependencies": ["@shadcn/react", "lucide-react"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "@shadcn/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "radio-group",
@@ -474,8 +623,12 @@
           "target": "@ui/radio-group.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "resizable",
@@ -489,8 +642,12 @@
           "target": "@ui/resizable.tsx"
         }
       ],
-      "dependencies": ["react-resizable-panels"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "react-resizable-panels"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "scroll-area",
@@ -504,8 +661,12 @@
           "target": "@ui/scroll-area.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "select",
@@ -519,8 +680,13 @@
           "target": "@ui/select.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "lucide-react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "separator",
@@ -534,8 +700,12 @@
           "target": "@ui/separator.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "sheet",
@@ -549,8 +719,14 @@
           "target": "@ui/sheet.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "lucide-react"],
-      "registryDependencies": ["button", "utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "sidebar",
@@ -570,14 +746,14 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-        "utils"
+        "zbanx-ai/zbanx-ui/button",
+        "zbanx-ai/zbanx-ui/input",
+        "zbanx-ai/zbanx-ui/separator",
+        "zbanx-ai/zbanx-ui/sheet",
+        "zbanx-ai/zbanx-ui/skeleton",
+        "zbanx-ai/zbanx-ui/tooltip",
+        "zbanx-ai/zbanx-ui/use-mobile",
+        "zbanx-ai/zbanx-ui/utils"
       ]
     },
     {
@@ -592,7 +768,9 @@
           "target": "@ui/skeleton.tsx"
         }
       ],
-      "registryDependencies": ["utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "slider",
@@ -606,8 +784,12 @@
           "target": "@ui/slider.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "sonner",
@@ -621,7 +803,12 @@
           "target": "@ui/sonner.tsx"
         }
       ],
-      "dependencies": ["lucide-react", "next-themes", "sonner"]
+      "dependencies": [
+        "lucide-react",
+        "next-themes",
+        "sonner"
+      ],
+      "registryDependencies": []
     },
     {
       "name": "spinner",
@@ -635,8 +822,12 @@
           "target": "@ui/spinner.tsx"
         }
       ],
-      "dependencies": ["lucide-react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "switch",
@@ -650,8 +841,12 @@
           "target": "@ui/switch.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "table",
@@ -665,7 +860,9 @@
           "target": "@ui/table.tsx"
         }
       ],
-      "registryDependencies": ["utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "tabs",
@@ -679,8 +876,13 @@
           "target": "@ui/tabs.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "textarea",
@@ -694,7 +896,9 @@
           "target": "@ui/textarea.tsx"
         }
       ],
-      "registryDependencies": ["utils"]
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "toggle-group",
@@ -708,8 +912,14 @@
           "target": "@ui/toggle-group.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["toggle", "utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/toggle",
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "toggle",
@@ -723,8 +933,13 @@
           "target": "@ui/toggle.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react", "class-variance-authority"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     },
     {
       "name": "tooltip",
@@ -738,8 +953,12 @@
           "target": "@ui/tooltip.tsx"
         }
       ],
-      "dependencies": ["@base-ui/react"],
-      "registryDependencies": ["utils"]
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "zbanx-ai/zbanx-ui/utils"
+      ]
     }
   ]
 }

@@ -7,10 +7,10 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "popover",
-    "scroll-area",
-    "tooltip",
-    "utils"
+    "zbanx-ai/zbanx-ui/popover",
+    "zbanx-ai/zbanx-ui/scroll-area",
+    "zbanx-ai/zbanx-ui/tooltip",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

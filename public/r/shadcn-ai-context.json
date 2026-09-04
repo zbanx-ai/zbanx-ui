@@ -8,10 +8,10 @@
     "tokenlens"
   ],
   "registryDependencies": [
-    "button",
-    "hover-card",
-    "progress",
-    "utils"
+    "zbanx-ai/zbanx-ui/button",
+    "zbanx-ai/zbanx-ui/hover-card",
+    "zbanx-ai/zbanx-ui/progress",
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {

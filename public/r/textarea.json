@@ -4,7 +4,7 @@
   "title": "Textarea",
   "description": "Textarea component.",
   "registryDependencies": [
-    "utils"
+    "zbanx-ai/zbanx-ui/utils"
   ],
   "files": [
     {
