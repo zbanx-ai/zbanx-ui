@@ -3,9 +3,9 @@
 基于 [shadcn registry](https://ui.shadcn.com/docs/registry) 机制的独立组件库，
 复用 `shadcn` CLI 分发，开箱即用。
 
-共 **113** 个 registry 项：`ui` 基础组件（49）· `custom` 自研业务组件（8）·
+共 **121** 个 registry 项：`ui` 基础组件（49）· `custom` 自研业务组件（8）·
 `ai-elements` AI 对话组件（48）· `ai-agents`（2）· `atom` 原子组件（2）·
-`hooks`（2）· `lib` 工具函数（2）。
+`hooks`（2）· `lib` 工具函数（2）· `bundles` 聚合安装项（8）。
 
 - 组件源码：`registry/zbanx/`（按分类拆分为 7 个 `registry.json` 分片）
 - 注册入口：根目录 `registry.json`（`name: zbanx-ui`，通过 `include` 组合各分片）
@@ -29,6 +29,22 @@ bunx --bun shadcn@latest add @zbanx/<name>
 bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/popover-confirm
 bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/button
 bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/use-mobile
+```
+
+## 全量 / 按类安装
+
+CLI 的 `--all` 不支持按命名空间过滤，因此本仓库提供了聚合项：
+
+```bash
+# 安装全部 113 个组件
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/all
+
+# 按分类安装
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-ui
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-custom
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-ai-elements
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-hooks
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-lib
 ```
 
 安装时 CLI 会自动处理 `dependencies`（npm 包）、`registryDependencies`
@@ -73,6 +89,7 @@ registry/zbanx/
   atom/registry.json
   hooks/registry.json          # use-mobile、use-countdown
   lib/registry.json            # utils（cn）、color
+  bundles/registry.json        # all 全量 + bundle-<分类> 聚合项（无文件，仅依赖）
 lib/
   utils.ts                     # cn()，本地开发与预览用
   registry.ts                  # 预览站读取 registry 的服务端工具
