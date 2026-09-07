@@ -51,6 +51,77 @@ bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-lib
 （依赖的其他组件）以及文件落点（`@ui` / `@components` / `@hooks` /
 `@lib` 按消费方 `components.json` 解析）。
 
+## 目录约定与消费方配置（方案 B）
+
+消费端约定（monorepo，包名 `@workspace/ui`）：
+
+- `src/utils/`：通用纯帮助函数（不依赖三方实例、不做 I/O）——`cn`、`color` 住这里；
+- `src/lib/`：三方库实例与协议封装（client 单例、fetch/请求封装等）。
+
+提供端 `registry/zbanx/lib/registry.json` 里两项的 `target` 均为 `@lib/css/*`
+（`@lib/css/cn.ts`、`@lib/css/color.ts`）。注意 `shadcn` 只认
+`@lib` / `@components` / `@ui` / `@hooks` 四个占位符，没有 `@utils`，
+且 workspace 模式下文件落点取的是 **`packages/ui/components.json`
+里 `aliases.lib`** 解析出的目录，与 `apps/web` 的 `utils` 别名无关
+（`utils` 只负责把源码里的 `import { cn } from "@/lib/utils"` 重写为目标路径）。
+
+消费方配置样例：
+
+```jsonc
+// packages/ui/components.json（决定落点：@lib/* → src/utils/*）
+{
+  "aliases": {
+    "components": "@workspace/ui/components",
+    "ui": "@workspace/ui/components/shadcn",
+    "hooks": "@workspace/ui/hooks",
+    "lib": "@workspace/ui/utils",
+    "utils": "@workspace/ui/utils/css/cn"
+  }
+}
+```
+
+```jsonc
+// apps/web/components.json（决定导入重写，lib 保持指向 src/lib 即可）
+{
+  "aliases": {
+    "components": "@workspace/ui/components",
+    "ui": "@workspace/ui/components/shadcn",
+    "hooks": "@workspace/ui/hooks",
+    "lib": "@workspace/ui/lib",
+    "utils": "@workspace/ui/utils/css/cn"
+  }
+}
+```
+
+要求消费端 `tsconfig` 满足 `@workspace/ui/* → packages/ui/src/*`
+（标准 monorepo paths 映射），则一次安装同时对齐落点与导入：
+
+```bash
+# 在 apps/web（或仓库根）执行
+bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-ai-agents --overwrite
+
+# 预期结果
+# packages/ui/src/utils/css/cn.ts         <- cn()
+# packages/ui/src/utils/css/color.ts      <- resolveCssColor()
+# 组件源码内：import { cn } from "@workspace/ui/utils/css/cn"
+```
+
+使用示例：
+
+```tsx
+import { cn } from "@workspace/ui/utils/css/cn";
+import { resolveCssColor } from "@workspace/ui/utils/css/color";
+
+export function Demo({ className, color }: { className?: string; color: string }) {
+  return <div className={cn("px-4", className)} style={{ color: resolveCssColor(color, color) }} />;
+}
+```
+
+代价说明：此后 `packages/ui` 的 `lib` 别名实际指向 `src/utils`，
+所有 `registry:lib` 类型都会进 `utils/`。目前提供端 `lib` 类只有
+`cn`、`color` 两个纯函数，语义正好吻合；将来若新增真该住 `src/lib`
+的三方封装，安装后需手动搬移（`shadcn` 占位符的硬限制）。
+
 ## 本地开发
 
 ```bash
