@@ -10,7 +10,7 @@
         {
           "path": "cn.ts",
           "type": "registry:lib",
-          "target": "@lib/cn.ts"
+          "target": "@lib/css/cn.ts"
         }
       ]
     },
@@ -23,7 +23,7 @@
         {
           "path": "color.ts",
           "type": "registry:lib",
-          "target": "@lib/color.ts"
+          "target": "@lib/css/color.ts"
         }
       ]
     }

@@ -2233,7 +2233,7 @@
         {
           "path": "registry/zbanx/lib/cn.ts",
           "type": "registry:lib",
-          "target": "@lib/cn.ts"
+          "target": "@lib/css/cn.ts"
         }
       ],
       "type": "registry:lib"
@@ -2246,7 +2246,7 @@
         {
           "path": "registry/zbanx/lib/color.ts",
           "type": "registry:lib",
-          "target": "@lib/color.ts"
+          "target": "@lib/css/color.ts"
         }
       ],
       "type": "registry:lib"
