@@ -2207,7 +2207,7 @@
         {
           "path": "registry/zbanx/hooks/use-countdown.ts",
           "type": "registry:hook",
-          "target": "@hooks/use-countdown.ts"
+          "target": "@hooks/use-countdown/index.ts"
         }
       ],
       "type": "registry:hook"
@@ -2220,7 +2220,7 @@
         {
           "path": "registry/zbanx/hooks/use-mobile.ts",
           "type": "registry:hook",
-          "target": "@hooks/use-mobile.ts"
+          "target": "@hooks/use-mobile/index.ts"
         }
       ],
       "type": "registry:hook"

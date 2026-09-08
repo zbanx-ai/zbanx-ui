@@ -10,7 +10,7 @@
         {
           "path": "use-countdown.ts",
           "type": "registry:hook",
-          "target": "@hooks/use-countdown.ts"
+          "target": "@hooks/use-countdown/index.ts"
         }
       ]
     },
@@ -23,7 +23,7 @@
         {
           "path": "use-mobile.ts",
           "type": "registry:hook",
-          "target": "@hooks/use-mobile.ts"
+          "target": "@hooks/use-mobile/index.ts"
         }
       ]
     }

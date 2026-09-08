@@ -136,7 +136,8 @@ bun run build      # 预览站生产构建
 1. 把源码放到 `registry/zbanx/` 对应分类下：
    - 基础单文件组件 → `registry/zbanx/ui/<name>.tsx`
    - 复合/业务组件 → `registry/zbanx/custom/<name>/index.tsx`
-   - Hook → `registry/zbanx/hooks/<name>.ts`
+    - Hook → `registry/zbanx/hooks/<name>.ts`，安装到消费端的
+      `hooks/<name>/index.ts`
    - 工具函数 → `registry/zbanx/lib/<name>.ts`
 2. 在同目录的 `registry.json` 分片中追加一项（参考同类条目）：
    - `name` 全局唯一；`type` 按种类填写
