@@ -1,3 +1,5 @@
+import chroma from "chroma-js";
+
 let context: CanvasRenderingContext2D | null = null;
 
 const SENTINEL = "#010101";
@@ -28,3 +30,30 @@ export function resolveCssColor(color: string, fallback: string): string {
     alpha / 255
   ).toFixed(3)})`;
 }
+
+/**
+ * 生成随机背景色和对应的文字颜色对
+ * @param color
+ * @returns
+ */
+export const generateColorPair = (
+  color?: string
+): {
+  bgColor: string;
+  textColor: string;
+} => {
+  const bgColor = color ?? chroma.random().hex();
+  const luminance = chroma(bgColor).luminance();
+  const textColor = luminance > 0.5 ? "#222" : "#fff";
+  return { bgColor, textColor };
+};
+
+/**
+ * 根据背景色计算合适的文字颜色
+ * @param bgColor
+ * @returns
+ */
+export const getTextColorForBackground = (bgColor: string): string => {
+  const luminance = chroma(bgColor).luminance();
+  return luminance > 0.5 ? "#222" : "#fff";
+};

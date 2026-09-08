@@ -228,10 +228,13 @@
       "name": "bundle-lib",
       "type": "registry:item",
       "title": "lib bundle",
-      "description": "Installs every item in the lib category (2 items).",
+      "description": "Installs every item in the lib category (5 items).",
       "registryDependencies": [
         "zbanx-ai/zbanx-ui/color",
-        "zbanx-ai/zbanx-ui/utils"
+        "zbanx-ai/zbanx-ui/utils",
+        "zbanx-ai/zbanx-ui/format",
+        "zbanx-ai/zbanx-ui/link",
+        "zbanx-ai/zbanx-ui/number"
       ]
     },
     {

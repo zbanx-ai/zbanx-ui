@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "format",
+  "title": "Format",
+  "description": "Formatting utility functions.",
+  "registryDependencies": [
+    "zbanx-ai/zbanx-ui/number"
+  ],
+  "files": [
+    {
+      "path": "registry/zbanx/lib/format/index.ts",
+      "content": "import { formatNumber as formatFormationNumber } from \"../number/formation\";\n\nexport function formatNumber(value: number): string {\n  return formatFormationNumber(value, { autoFormat: false });\n}\n\nexport function formatOptionalNumber(value: number | null): string {\n  return value == null ? \"—\" : formatNumber(value);\n}\n\nexport function formatCurrency(value: number, currency = \"USD\"): string {\n  return new Intl.NumberFormat(\"en-US\", {\n    style: \"currency\",\n    currency,\n    maximumFractionDigits: 0,\n  }).format(value);\n}\n\nexport function formatDate(iso: string): string {\n  const date = new Date(iso);\n  if (Number.isNaN(date.getTime())) return iso;\n  return new Intl.DateTimeFormat(\"zh-CN\", { dateStyle: \"short\" }).format(date);\n}\n\nexport function formatPercentChange(value: number): string {\n  const sign = value >= 0 ? \"+\" : \"\";\n  return `${sign}${value}%`;\n}\n\nexport function formatDuration(seconds: number): string {\n  const minutes = Math.floor(seconds / 60);\n  const rest = seconds % 60;\n  if (minutes === 0) return `${rest}秒`;\n  return rest === 0 ? `${minutes}min` : `${minutes}min${rest}s`;\n}\n",
+      "type": "registry:lib",
+      "target": "@lib/format/index.ts"
+    }
+  ],
+  "type": "registry:lib"
+}

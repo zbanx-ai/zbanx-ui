@@ -3,12 +3,15 @@
   "name": "color",
   "title": "Color",
   "description": "Color component.",
+  "dependencies": [
+    "chroma-js"
+  ],
   "files": [
     {
-      "path": "registry/zbanx/lib/color.ts",
-      "content": "let context: CanvasRenderingContext2D | null = null;\n\nconst SENTINEL = \"#010101\";\nconst SENTINEL_SERIALIZED = \"rgb(1, 1, 1)\";\n\n/**\n * 将 zrender 颜色插值解析器不支持的 CSS 颜色（oklch/lab/color() 等）\n * 转换为 rgba 字符串，保证 echarts hover 状态过渡可正常插值。\n */\nexport function resolveCssColor(color: string, fallback: string): string {\n  if (typeof document === \"undefined\") return fallback || color;\n  context ??= document\n    .createElement(\"canvas\")\n    .getContext(\"2d\", { willReadFrequently: true });\n  if (!context) return fallback;\n  const ctx = context;\n  ctx.clearRect(0, 0, 1, 1);\n  ctx.fillStyle = SENTINEL;\n  ctx.fillStyle = color || fallback;\n  if (ctx.fillStyle === SENTINEL_SERIALIZED && color !== SENTINEL) {\n    return fallback;\n  }\n  ctx.fillRect(0, 0, 1, 1);\n  const pixel = ctx.getImageData(0, 0, 1, 1).data;\n  const alpha = pixel[3] ?? 0;\n  if (alpha === 0) return fallback;\n  return `rgba(${pixel[0] ?? 0}, ${pixel[1] ?? 0}, ${pixel[2] ?? 0}, ${(\n    alpha / 255\n  ).toFixed(3)})`;\n}\n",
+      "path": "registry/zbanx/lib/color/index.ts",
+      "content": "import chroma from \"chroma-js\";\n\nlet context: CanvasRenderingContext2D | null = null;\n\nconst SENTINEL = \"#010101\";\nconst SENTINEL_SERIALIZED = \"rgb(1, 1, 1)\";\n\n/**\n * 将 zrender 颜色插值解析器不支持的 CSS 颜色（oklch/lab/color() 等）\n * 转换为 rgba 字符串，保证 echarts hover 状态过渡可正常插值。\n */\nexport function resolveCssColor(color: string, fallback: string): string {\n  if (typeof document === \"undefined\") return fallback || color;\n  context ??= document\n    .createElement(\"canvas\")\n    .getContext(\"2d\", { willReadFrequently: true });\n  if (!context) return fallback;\n  const ctx = context;\n  ctx.clearRect(0, 0, 1, 1);\n  ctx.fillStyle = SENTINEL;\n  ctx.fillStyle = color || fallback;\n  if (ctx.fillStyle === SENTINEL_SERIALIZED && color !== SENTINEL) {\n    return fallback;\n  }\n  ctx.fillRect(0, 0, 1, 1);\n  const pixel = ctx.getImageData(0, 0, 1, 1).data;\n  const alpha = pixel[3] ?? 0;\n  if (alpha === 0) return fallback;\n  return `rgba(${pixel[0] ?? 0}, ${pixel[1] ?? 0}, ${pixel[2] ?? 0}, ${(\n    alpha / 255\n  ).toFixed(3)})`;\n}\n\n/**\n * 生成随机背景色和对应的文字颜色对\n * @param color\n * @returns\n */\nexport const generateColorPair = (\n  color?: string\n): {\n  bgColor: string;\n  textColor: string;\n} => {\n  const bgColor = color ?? chroma.random().hex();\n  const luminance = chroma(bgColor).luminance();\n  const textColor = luminance > 0.5 ? \"#222\" : \"#fff\";\n  return { bgColor, textColor };\n};\n\n/**\n * 根据背景色计算合适的文字颜色\n * @param bgColor\n * @returns\n */\nexport const getTextColorForBackground = (bgColor: string): string => {\n  const luminance = chroma(bgColor).luminance();\n  return luminance > 0.5 ? \"#222\" : \"#fff\";\n};\n",
       "type": "registry:lib",
-      "target": "@lib/css/color.ts"
+      "target": "@lib/color/index.ts"
     }
   ],
   "type": "registry:lib"

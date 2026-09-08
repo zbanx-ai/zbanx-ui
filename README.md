@@ -3,9 +3,9 @@
 基于 [shadcn registry](https://ui.shadcn.com/docs/registry) 机制的独立组件库，
 复用 `shadcn` CLI 分发，开箱即用。
 
-共 **121** 个 registry 项：`ui` 基础组件（49）· `custom` 自研业务组件（8）·
+共 **124** 个 registry 项：`ui` 基础组件（49）· `custom` 自研业务组件（8）·
 `ai-elements` AI 对话组件（48）· `ai-agents`（2）· `atom` 原子组件（2）·
-`hooks`（2）· `lib` 工具函数（2）· `bundles` 聚合安装项（8）。
+`hooks`（2）· `lib` 工具函数（5）· `bundles` 聚合安装项（8）。
 
 - 组件源码：`registry/zbanx/`（按分类拆分为 7 个 `registry.json` 分片）
 - 注册入口：根目录 `registry.json`（`name: zbanx-ui`，通过 `include` 组合各分片）
@@ -58,8 +58,8 @@ bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-lib
 - `src/utils/`：通用纯帮助函数（不依赖三方实例、不做 I/O）——`cn`、`color` 住这里；
 - `src/lib/`：三方库实例与协议封装（client 单例、fetch/请求封装等）。
 
-提供端 `registry/zbanx/lib/registry.json` 里两项的 `target` 均为 `@lib/css/*`
-（`@lib/css/cn.ts`、`@lib/css/color.ts`）。注意 `shadcn` 只认
+提供端 `registry/zbanx/lib/registry.json` 中，`cn` 使用 `@lib/css/cn.ts`，
+`color` 使用目录入口 `@lib/color/index.ts`。注意 `shadcn` 只认
 `@lib` / `@components` / `@ui` / `@hooks` 四个占位符，没有 `@utils`，
 且 workspace 模式下文件落点取的是 **`packages/ui/components.json`
 里 `aliases.lib`** 解析出的目录，与 `apps/web` 的 `utils` 别名无关
@@ -102,7 +102,7 @@ bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-ai-agents --overwrite
 
 # 预期结果
 # packages/ui/src/utils/css/cn.ts         <- cn()
-# packages/ui/src/utils/css/color.ts      <- resolveCssColor()
+# packages/ui/src/utils/color/index.ts    <- resolveCssColor()
 # 组件源码内：import { cn } from "@workspace/ui/utils/css/cn"
 ```
 
@@ -110,7 +110,7 @@ bunx --bun shadcn@latest add zbanx-ai/zbanx-ui/bundle-ai-agents --overwrite
 
 ```tsx
 import { cn } from "@workspace/ui/utils/css/cn";
-import { resolveCssColor } from "@workspace/ui/utils/css/color";
+import { resolveCssColor } from "@workspace/ui/utils/color";
 
 export function Demo({ className, color }: { className?: string; color: string }) {
   return <div className={cn("px-4", className)} style={{ color: resolveCssColor(color, color) }} />;
@@ -138,7 +138,7 @@ bun run build      # 预览站生产构建
    - 复合/业务组件 → `registry/zbanx/custom/<name>/index.tsx`
     - Hook → `registry/zbanx/hooks/<name>.ts`，安装到消费端的
       `hooks/<name>/index.ts`
-   - 工具函数 → `registry/zbanx/lib/<name>.ts`
+    - 工具函数 → `registry/zbanx/lib/<name>/index.ts`，同一功能的附属文件放在该目录下
 2. 在同目录的 `registry.json` 分片中追加一项（参考同类条目）：
    - `name` 全局唯一；`type` 按种类填写
     （`registry:ui` / `registry:component` / `registry:hook` / `registry:lib`）
@@ -160,7 +160,7 @@ registry/zbanx/
   ai-agents/registry.json
   atom/registry.json
   hooks/registry.json          # use-mobile、use-countdown
-  lib/registry.json            # utils（cn）、color
+  lib/registry.json            # utils、color、format、link、number
   bundles/registry.json        # all 全量 + bundle-<分类> 聚合项（无文件，仅依赖）
 lib/
   utils.ts                     # cn()，本地开发与预览用

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "link",
+  "title": "Link",
+  "description": "URL and platform link utility functions.",
+  "files": [
+    {
+      "path": "registry/zbanx/lib/link/index.ts",
+      "content": "/**\n * 生成绝对 URL\n * @param url\n * @returns\n */\nexport function getAbsoluteUrl(url?: string | null) {\n  if (!url) {\n    return \"\";\n  }\n  return isAbsoluteUrl(url) ? url : `https://${url}`;\n}\n\n/**\n * 判断一个 URL 是否为绝对 URL\n * @param url\n * @returns\n */\nexport function isAbsoluteUrl(url: string) {\n  return /^(?:[a-z][a-z0-9\\-.+]*:)?\\/\\//i.test(url);\n}\n\n/**\n * 生成 youtube 的搜索链接\n * @param query\n * @returns {string}\n *\n * @example\n * getYoutubeSearchUrl(\"Xiaomi 15 Ultra vs Huawei Pura 80 Pro+\")\n * // https://www.youtube.com/results?search_query=Xiaomi+15+Ultra+vs+Huawei+Pura+80+Pro%2B\n */\nexport function getYoutubeSearchUrl(query: string): string {\n  const words = query.split(\" \").map(encodeURIComponent);\n  return `https://www.youtube.com/results?search_query=${words.join(\"+\")}`;\n}\n\n/**\n * 生成 tiktok 的搜索链接\n * @param query\n * @returns {string}\n */\nexport function getTikTokSearchUrl(query: string): string {\n  const words = query.split(\" \").map(encodeURIComponent);\n  return `https://www.tiktok.com/search?q=${words.join(\"+\")}`;\n}\n",
+      "type": "registry:lib",
+      "target": "@lib/link/index.ts"
+    }
+  ],
+  "type": "registry:lib"
+}
