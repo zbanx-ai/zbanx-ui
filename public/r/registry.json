@@ -2231,7 +2231,7 @@
       "description": "Utils component.",
       "files": [
         {
-          "path": "registry/zbanx/lib/css/cn.ts",
+          "path": "registry/zbanx/utils/css/cn.ts",
           "type": "registry:lib",
           "target": "@lib/css/cn.ts"
         }
@@ -2247,7 +2247,7 @@
       ],
       "files": [
         {
-          "path": "registry/zbanx/lib/color/index.ts",
+          "path": "registry/zbanx/utils/color/index.ts",
           "type": "registry:lib",
           "target": "@lib/color/index.ts"
         }
@@ -2263,7 +2263,7 @@
       ],
       "files": [
         {
-          "path": "registry/zbanx/lib/format/index.ts",
+          "path": "registry/zbanx/utils/format/index.ts",
           "type": "registry:lib",
           "target": "@lib/format/index.ts"
         }
@@ -2276,7 +2276,7 @@
       "description": "URL and platform link utility functions.",
       "files": [
         {
-          "path": "registry/zbanx/lib/link/index.ts",
+          "path": "registry/zbanx/utils/link/index.ts",
           "type": "registry:lib",
           "target": "@lib/link/index.ts"
         }
@@ -2289,12 +2289,12 @@
       "description": "Number parsing, formatting, and calculation utilities.",
       "files": [
         {
-          "path": "registry/zbanx/lib/number/index.ts",
+          "path": "registry/zbanx/utils/number/index.ts",
           "type": "registry:lib",
           "target": "@lib/number/index.ts"
         },
         {
-          "path": "registry/zbanx/lib/number/formation.ts",
+          "path": "registry/zbanx/utils/number/formation.ts",
           "type": "registry:lib",
           "target": "@lib/number/formation.ts"
         }
@@ -2525,9 +2525,9 @@
       "type": "registry:item"
     },
     {
-      "name": "bundle-lib",
-      "title": "lib bundle",
-      "description": "Installs every item in the lib category (5 items).",
+      "name": "bundle-utils",
+      "title": "utils bundle",
+      "description": "Installs every item in the utils category (5 items).",
       "registryDependencies": [
         "zbanx-ai/zbanx-ui/color",
         "zbanx-ai/zbanx-ui/utils",

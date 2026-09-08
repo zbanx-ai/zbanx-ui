@@ -19,14 +19,14 @@
       "type": "registry:lib",
       "title": "Color",
       "description": "Color component.",
+      "dependencies": ["chroma-js"],
       "files": [
         {
           "path": "color/index.ts",
           "type": "registry:lib",
           "target": "@lib/color/index.ts"
         }
-      ],
-      "dependencies": ["chroma-js"]
+      ]
     },
     {
       "name": "format",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "bundle-lib",
-  "title": "lib bundle",
-  "description": "Installs every item in the lib category (5 items).",
+  "name": "bundle-utils",
+  "title": "utils bundle",
+  "description": "Installs every item in the utils category (5 items).",
   "registryDependencies": [
     "zbanx-ai/zbanx-ui/color",
     "zbanx-ai/zbanx-ui/utils",
