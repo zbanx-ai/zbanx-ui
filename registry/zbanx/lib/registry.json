@@ -23,7 +23,7 @@
         {
           "path": "color.ts",
           "type": "registry:lib",
-          "target": "@lib/css/color.ts"
+          "target": "@lib/color/index.ts"
         }
       ]
     }
